@@ -1,0 +1,475 @@
+# _ssu-align :: align SSU rRNA sequences
+# SSU-ALIGN 0.1.1 (Feb 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# command: _ssu-align -b 50 --dna --rfonly ssu_aln/DADA2seqs.fasta.1 ssu_aln/ssu_aln.1
+# date:    Fri Oct  5 13:25:02 2018
+
+Printing global hask key as read from ssu.pm:
+
+Global hash key: DF_ALIMASK_PFRACT    value: 0.95
+Global hash key: DF_ALIMASK_PTHRESH   value: 0.95
+Global hash key: DF_CMALIGN_OPTS      value:  --no-null3 --sub 
+Global hash key: DF_CMBUILD_GAPTHRESH value: 0.8
+Global hash key: DF_CMSEARCH_ALG_FLAG value:  --viterbi
+Global hash key: DF_CMSEARCH_OPTS     value:  --hmm-cW 1.5 --no-null3 --noalign 
+Global hash key: DF_CMSEARCH_T        value: -1
+Global hash key: DF_CM_FILE           value: /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm
+Global hash key: DF_MASK_FILE         value: /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.mask
+Global hash key: DF_MERGE_INIT_WAIT_SECS value: 3
+Global hash key: DF_MINBIT            value: 50
+Global hash key: DF_MINLEN            value: 1
+Global hash key: DF_MXSIZE            value: 4096
+Global hash key: DF_NO_NAME           value: <NONE>
+Global hash key: DF_TEMPLATE_FILE     value: /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.ps
+Global hash key: VERSION              value: 0.1
+Global hash key: VERSION_PSTR         value: 0p1
+Global hash key: cmalign              value: ssu-cmalign
+Global hash key: cmbuild              value: ssu-cmbuild
+Global hash key: cmsearch             value: ssu-cmsearch
+Global hash key: esl-alimanip         value: ssu-esl-alimanip
+Global hash key: esl-alimask          value: ssu-esl-alimask
+Global hash key: esl-alimerge         value: ssu-esl-alimerge
+Global hash key: esl-alistat          value: ssu-esl-alistat
+Global hash key: esl-reformat         value: ssu-esl-reformat
+Global hash key: esl-seqstat          value: ssu-esl-seqstat
+Global hash key: esl-sfetch           value: ssu-esl-sfetch
+Global hash key: esl-ssdraw           value: ssu-esl-ssdraw
+Global hash key: esl-weight           value: ssu-esl-weight
+Global hash key: ps2pdf               value: ps2pdf
+Global hash key: ssu-align            value: ssu-align
+Global hash key: ssu-merge            value: ssu-merge
+
+Executing:      ssu-esl-seqstat -h > /dev/null  2> ssu_aln/ssutmp0erraa34120
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp0erraa34120) with perl's unlink function ... done.
+
+Executing:      ssu-cmsearch -h > /dev/null  2> ssu_aln/ssutmp1erraa34120
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp1erraa34120) with perl's unlink function ... done.
+
+Executing:      ssu-esl-sfetch -h > /dev/null  2> ssu_aln/ssutmp2erraa34120
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp2erraa34120) with perl's unlink function ... done.
+
+Executing:      ssu-esl-reformat -h > /dev/null  2> ssu_aln/ssutmp3erraa34120
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp3erraa34120) with perl's unlink function ... done.
+
+Executing:      ssu-cmalign -h > /dev/null  2> ssu_aln/ssutmp4erraa34120
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp4erraa34120) with perl's unlink function ... done.
+
+Executing:      ssu-esl-seqstat --rna -a ssu_aln/DADA2seqs.fasta.1 > ssu_aln/ssu_aln.1/ssu_aln.1.seqstat  2> ssu_aln/ssutmp5erraa34120
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.1/ssu_aln.1.seqstat.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp5erraa34120) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.1/ssu_aln.1.seqstat) with perl's unlink function ... done.
+
+Executing:      ssu-cmsearch --hmm-cW 1.5 --no-null3 --noalign -T -1 --tab ssu_aln/ssu_aln.1/ssu_aln.1.tab --viterbi /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm ssu_aln/DADA2seqs.fasta.1 > ssu_aln/ssu_aln.1/ssu_aln.1.cmsearch  2> ssu_aln/ssutmp6erraa34120
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.1/ssu_aln.1.cmsearch.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp6erraa34120) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.1/ssu_aln.1.cmsearch) with perl's unlink function ... done.
+
+Executing:      ssu-esl-sfetch --index ssu_aln/DADA2seqs.fasta.1 > ssu_aln/ssutmp7outaa34120  2> ssu_aln/ssutmp7erraa34120
+Returned:       0
+Output (STDOUT): 
+Creating SSI index for ssu_aln/DADA2seqs.fasta.1...    done.
+Indexed 3959 sequences (3959 names).
+SSI index written to file ssu_aln/DADA2seqs.fasta.1.ssi
+
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp7outaa34120) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssutmp7erraa34120) with perl's unlink function ... done.
+
+Executing:      ssu-esl-sfetch -Cf ssu_aln/DADA2seqs.fasta.1 ssu_aln/ssu_aln.1/ssu_aln.1.archaea.sfetch | ssu-esl-reformat -o ssu_aln/ssu_aln.1/ssu_aln.1.archaea.fa --informat fasta -d fasta - > ssu_aln/ssutmp8outaa34120  2> ssu_aln/ssutmp8erraa34120
+Returned:       0
+Output (STDOUT): ***NONE***
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp8outaa34120) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssutmp8erraa34120) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.1/ssu_aln.1.archaea.sfetch) with perl's unlink function ... done.
+
+Executing:      ssu-esl-sfetch -Cf ssu_aln/DADA2seqs.fasta.1 ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.sfetch | ssu-esl-reformat -o ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.fa --informat fasta -d fasta - > ssu_aln/ssutmp9outaa34120  2> ssu_aln/ssutmp9erraa34120
+Returned:       0
+Output (STDOUT): ***NONE***
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp9outaa34120) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssutmp9erraa34120) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.sfetch) with perl's unlink function ... done.
+
+Executing:      ssu-cmalign --cm-name archaea --dna --matchonly --mxsize 4096 --no-null3 --sub --ifile ssu_aln/ssu_aln.1/ssu_aln.1.archaea.ifile -o ssu_aln/ssu_aln.1/ssu_aln.1.archaea.stk /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm ssu_aln/ssu_aln.1/ssu_aln.1.archaea.fa > ssu_aln/ssu_aln.1/ssu_aln.1.archaea.cmalign  2> ssu_aln/ssutmp10erraa34120
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.1/ssu_aln.1.archaea.cmalign.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp10erraa34120) with perl's unlink function ... done.
+
+Executing:      ssu-cmalign --cm-name bacteria --dna --matchonly --mxsize 4096 --no-null3 --sub --ifile ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.ifile -o ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.stk /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.fa > ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.cmalign  2> ssu_aln/ssutmp11erraa34120
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.cmalign.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp11erraa34120) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/DADA2seqs.fasta.1.ssi) with perl's unlink function ... done.
+
+Fri Oct  5 13:40:13 EDT 2018
+Linux william 4.4.0-97-generic #120-Ubuntu SMP Tue Sep 19 17:28:18 UTC 2017 x86_64 GNU/Linux
+# _ssu-align :: align SSU rRNA sequences
+# SSU-ALIGN 0.1.1 (Feb 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# command: _ssu-align -b 50 --dna --rfonly ssu_aln/DADA2seqs.fasta.2 ssu_aln/ssu_aln.2
+# date:    Fri Oct  5 13:25:02 2018
+
+Printing global hask key as read from ssu.pm:
+
+Global hash key: DF_ALIMASK_PFRACT    value: 0.95
+Global hash key: DF_ALIMASK_PTHRESH   value: 0.95
+Global hash key: DF_CMALIGN_OPTS      value:  --no-null3 --sub 
+Global hash key: DF_CMBUILD_GAPTHRESH value: 0.8
+Global hash key: DF_CMSEARCH_ALG_FLAG value:  --viterbi
+Global hash key: DF_CMSEARCH_OPTS     value:  --hmm-cW 1.5 --no-null3 --noalign 
+Global hash key: DF_CMSEARCH_T        value: -1
+Global hash key: DF_CM_FILE           value: /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm
+Global hash key: DF_MASK_FILE         value: /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.mask
+Global hash key: DF_MERGE_INIT_WAIT_SECS value: 3
+Global hash key: DF_MINBIT            value: 50
+Global hash key: DF_MINLEN            value: 1
+Global hash key: DF_MXSIZE            value: 4096
+Global hash key: DF_NO_NAME           value: <NONE>
+Global hash key: DF_TEMPLATE_FILE     value: /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.ps
+Global hash key: VERSION              value: 0.1
+Global hash key: VERSION_PSTR         value: 0p1
+Global hash key: cmalign              value: ssu-cmalign
+Global hash key: cmbuild              value: ssu-cmbuild
+Global hash key: cmsearch             value: ssu-cmsearch
+Global hash key: esl-alimanip         value: ssu-esl-alimanip
+Global hash key: esl-alimask          value: ssu-esl-alimask
+Global hash key: esl-alimerge         value: ssu-esl-alimerge
+Global hash key: esl-alistat          value: ssu-esl-alistat
+Global hash key: esl-reformat         value: ssu-esl-reformat
+Global hash key: esl-seqstat          value: ssu-esl-seqstat
+Global hash key: esl-sfetch           value: ssu-esl-sfetch
+Global hash key: esl-ssdraw           value: ssu-esl-ssdraw
+Global hash key: esl-weight           value: ssu-esl-weight
+Global hash key: ps2pdf               value: ps2pdf
+Global hash key: ssu-align            value: ssu-align
+Global hash key: ssu-merge            value: ssu-merge
+
+Executing:      ssu-esl-seqstat -h > /dev/null  2> ssu_aln/ssutmp0erraa34121
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp0erraa34121) with perl's unlink function ... done.
+
+Executing:      ssu-cmsearch -h > /dev/null  2> ssu_aln/ssutmp1erraa34121
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp1erraa34121) with perl's unlink function ... done.
+
+Executing:      ssu-esl-sfetch -h > /dev/null  2> ssu_aln/ssutmp2erraa34121
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp2erraa34121) with perl's unlink function ... done.
+
+Executing:      ssu-esl-reformat -h > /dev/null  2> ssu_aln/ssutmp3erraa34121
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp3erraa34121) with perl's unlink function ... done.
+
+Executing:      ssu-cmalign -h > /dev/null  2> ssu_aln/ssutmp4erraa34121
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp4erraa34121) with perl's unlink function ... done.
+
+Executing:      ssu-esl-seqstat --rna -a ssu_aln/DADA2seqs.fasta.2 > ssu_aln/ssu_aln.2/ssu_aln.2.seqstat  2> ssu_aln/ssutmp5erraa34121
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.2/ssu_aln.2.seqstat.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp5erraa34121) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.2/ssu_aln.2.seqstat) with perl's unlink function ... done.
+
+Executing:      ssu-cmsearch --hmm-cW 1.5 --no-null3 --noalign -T -1 --tab ssu_aln/ssu_aln.2/ssu_aln.2.tab --viterbi /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm ssu_aln/DADA2seqs.fasta.2 > ssu_aln/ssu_aln.2/ssu_aln.2.cmsearch  2> ssu_aln/ssutmp6erraa34121
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.2/ssu_aln.2.cmsearch.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp6erraa34121) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.2/ssu_aln.2.cmsearch) with perl's unlink function ... done.
+
+Executing:      ssu-esl-sfetch --index ssu_aln/DADA2seqs.fasta.2 > ssu_aln/ssutmp7outaa34121  2> ssu_aln/ssutmp7erraa34121
+Returned:       0
+Output (STDOUT): 
+Creating SSI index for ssu_aln/DADA2seqs.fasta.2...    done.
+Indexed 3960 sequences (3960 names).
+SSI index written to file ssu_aln/DADA2seqs.fasta.2.ssi
+
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp7outaa34121) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssutmp7erraa34121) with perl's unlink function ... done.
+
+Executing:      ssu-esl-sfetch -Cf ssu_aln/DADA2seqs.fasta.2 ssu_aln/ssu_aln.2/ssu_aln.2.archaea.sfetch | ssu-esl-reformat -o ssu_aln/ssu_aln.2/ssu_aln.2.archaea.fa --informat fasta -d fasta - > ssu_aln/ssutmp8outaa34121  2> ssu_aln/ssutmp8erraa34121
+Returned:       0
+Output (STDOUT): ***NONE***
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp8outaa34121) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssutmp8erraa34121) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.2/ssu_aln.2.archaea.sfetch) with perl's unlink function ... done.
+
+Executing:      ssu-esl-sfetch -Cf ssu_aln/DADA2seqs.fasta.2 ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.sfetch | ssu-esl-reformat -o ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.fa --informat fasta -d fasta - > ssu_aln/ssutmp9outaa34121  2> ssu_aln/ssutmp9erraa34121
+Returned:       0
+Output (STDOUT): ***NONE***
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp9outaa34121) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssutmp9erraa34121) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.sfetch) with perl's unlink function ... done.
+
+Executing:      ssu-cmalign --cm-name archaea --dna --matchonly --mxsize 4096 --no-null3 --sub --ifile ssu_aln/ssu_aln.2/ssu_aln.2.archaea.ifile -o ssu_aln/ssu_aln.2/ssu_aln.2.archaea.stk /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm ssu_aln/ssu_aln.2/ssu_aln.2.archaea.fa > ssu_aln/ssu_aln.2/ssu_aln.2.archaea.cmalign  2> ssu_aln/ssutmp10erraa34121
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.2/ssu_aln.2.archaea.cmalign.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp10erraa34121) with perl's unlink function ... done.
+
+Executing:      ssu-cmalign --cm-name bacteria --dna --matchonly --mxsize 4096 --no-null3 --sub --ifile ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.ifile -o ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.stk /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.fa > ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.cmalign  2> ssu_aln/ssutmp11erraa34121
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.cmalign.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp11erraa34121) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/DADA2seqs.fasta.2.ssi) with perl's unlink function ... done.
+
+Fri Oct  5 13:40:33 EDT 2018
+Linux william 4.4.0-97-generic #120-Ubuntu SMP Tue Sep 19 17:28:18 UTC 2017 x86_64 GNU/Linux
+# _ssu-align :: align SSU rRNA sequences
+# SSU-ALIGN 0.1.1 (Feb 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# command: _ssu-align --merge 3 -b 50 --dna --rfonly ssu_aln/DADA2seqs.fasta.3 ssu_aln/ssu_aln.3
+# date:    Fri Oct  5 13:25:02 2018
+
+Printing global hask key as read from ssu.pm:
+
+Global hash key: DF_ALIMASK_PFRACT    value: 0.95
+Global hash key: DF_ALIMASK_PTHRESH   value: 0.95
+Global hash key: DF_CMALIGN_OPTS      value:  --no-null3 --sub 
+Global hash key: DF_CMBUILD_GAPTHRESH value: 0.8
+Global hash key: DF_CMSEARCH_ALG_FLAG value:  --viterbi
+Global hash key: DF_CMSEARCH_OPTS     value:  --hmm-cW 1.5 --no-null3 --noalign 
+Global hash key: DF_CMSEARCH_T        value: -1
+Global hash key: DF_CM_FILE           value: /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm
+Global hash key: DF_MASK_FILE         value: /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.mask
+Global hash key: DF_MERGE_INIT_WAIT_SECS value: 3
+Global hash key: DF_MINBIT            value: 50
+Global hash key: DF_MINLEN            value: 1
+Global hash key: DF_MXSIZE            value: 4096
+Global hash key: DF_NO_NAME           value: <NONE>
+Global hash key: DF_TEMPLATE_FILE     value: /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.ps
+Global hash key: VERSION              value: 0.1
+Global hash key: VERSION_PSTR         value: 0p1
+Global hash key: cmalign              value: ssu-cmalign
+Global hash key: cmbuild              value: ssu-cmbuild
+Global hash key: cmsearch             value: ssu-cmsearch
+Global hash key: esl-alimanip         value: ssu-esl-alimanip
+Global hash key: esl-alimask          value: ssu-esl-alimask
+Global hash key: esl-alimerge         value: ssu-esl-alimerge
+Global hash key: esl-alistat          value: ssu-esl-alistat
+Global hash key: esl-reformat         value: ssu-esl-reformat
+Global hash key: esl-seqstat          value: ssu-esl-seqstat
+Global hash key: esl-sfetch           value: ssu-esl-sfetch
+Global hash key: esl-ssdraw           value: ssu-esl-ssdraw
+Global hash key: esl-weight           value: ssu-esl-weight
+Global hash key: ps2pdf               value: ps2pdf
+Global hash key: ssu-align            value: ssu-align
+Global hash key: ssu-merge            value: ssu-merge
+
+Executing:      ssu-esl-seqstat -h > /dev/null  2> ssu_aln/ssutmp0erraa34122
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp0erraa34122) with perl's unlink function ... done.
+
+Executing:      ssu-cmsearch -h > /dev/null  2> ssu_aln/ssutmp1erraa34122
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp1erraa34122) with perl's unlink function ... done.
+
+Executing:      ssu-esl-sfetch -h > /dev/null  2> ssu_aln/ssutmp2erraa34122
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp2erraa34122) with perl's unlink function ... done.
+
+Executing:      ssu-esl-reformat -h > /dev/null  2> ssu_aln/ssutmp3erraa34122
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp3erraa34122) with perl's unlink function ... done.
+
+Executing:      ssu-cmalign -h > /dev/null  2> ssu_aln/ssutmp4erraa34122
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp4erraa34122) with perl's unlink function ... done.
+
+Executing:      ssu-merge -h > /dev/null  2> ssu_aln/ssutmp5erraa34122
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp5erraa34122) with perl's unlink function ... done.
+
+Executing:      ssu-esl-seqstat --rna -a ssu_aln/DADA2seqs.fasta.3 > ssu_aln/ssu_aln.3/ssu_aln.3.seqstat  2> ssu_aln/ssutmp6erraa34122
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.3/ssu_aln.3.seqstat.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp6erraa34122) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.3/ssu_aln.3.seqstat) with perl's unlink function ... done.
+
+Executing:      ssu-cmsearch --hmm-cW 1.5 --no-null3 --noalign -T -1 --tab ssu_aln/ssu_aln.3/ssu_aln.3.tab --viterbi /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm ssu_aln/DADA2seqs.fasta.3 > ssu_aln/ssu_aln.3/ssu_aln.3.cmsearch  2> ssu_aln/ssutmp7erraa34122
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.3/ssu_aln.3.cmsearch.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp7erraa34122) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.3/ssu_aln.3.cmsearch) with perl's unlink function ... done.
+
+Executing:      ssu-esl-sfetch --index ssu_aln/DADA2seqs.fasta.3 > ssu_aln/ssutmp8outaa34122  2> ssu_aln/ssutmp8erraa34122
+Returned:       0
+Output (STDOUT): 
+Creating SSI index for ssu_aln/DADA2seqs.fasta.3...    done.
+Indexed 3958 sequences (3958 names).
+SSI index written to file ssu_aln/DADA2seqs.fasta.3.ssi
+
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp8outaa34122) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssutmp8erraa34122) with perl's unlink function ... done.
+
+Executing:      ssu-esl-sfetch -Cf ssu_aln/DADA2seqs.fasta.3 ssu_aln/ssu_aln.3/ssu_aln.3.archaea.sfetch | ssu-esl-reformat -o ssu_aln/ssu_aln.3/ssu_aln.3.archaea.fa --informat fasta -d fasta - > ssu_aln/ssutmp9outaa34122  2> ssu_aln/ssutmp9erraa34122
+Returned:       0
+Output (STDOUT): ***NONE***
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp9outaa34122) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssutmp9erraa34122) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.3/ssu_aln.3.archaea.sfetch) with perl's unlink function ... done.
+
+Executing:      ssu-esl-sfetch -Cf ssu_aln/DADA2seqs.fasta.3 ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.sfetch | ssu-esl-reformat -o ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.fa --informat fasta -d fasta - > ssu_aln/ssutmp10outaa34122  2> ssu_aln/ssutmp10erraa34122
+Returned:       0
+Output (STDOUT): ***NONE***
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp10outaa34122) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssutmp10erraa34122) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.sfetch) with perl's unlink function ... done.
+
+Executing:      ssu-cmalign --cm-name archaea --dna --matchonly --mxsize 4096 --no-null3 --sub --ifile ssu_aln/ssu_aln.3/ssu_aln.3.archaea.ifile -o ssu_aln/ssu_aln.3/ssu_aln.3.archaea.stk /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm ssu_aln/ssu_aln.3/ssu_aln.3.archaea.fa > ssu_aln/ssu_aln.3/ssu_aln.3.archaea.cmalign  2> ssu_aln/ssutmp11erraa34122
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.3/ssu_aln.3.archaea.cmalign.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp11erraa34122) with perl's unlink function ... done.
+
+Executing:      ssu-cmalign --cm-name bacteria --dna --matchonly --mxsize 4096 --no-null3 --sub --ifile ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.ifile -o ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.stk /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.fa > ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.cmalign  2> ssu_aln/ssutmp12erraa34122
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.cmalign.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp12erraa34122) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/DADA2seqs.fasta.3.ssi) with perl's unlink function ... done.
+
+Fri Oct  5 13:40:05 EDT 2018
+Linux william 4.4.0-97-generic #120-Ubuntu SMP Tue Sep 19 17:28:18 UTC 2017 x86_64 GNU/Linux
+################################################################################
+#
+# Alignments successfully created.
+#
+# Checking/waiting for other jobs to finish before merging...
+#
+# Alignments successfully created.
+#
+# Checking/waiting for other jobs to finish before merging...
+#
+# Job 3 (dir: ssu_aln/ssu_aln.3) completed successfully! 2/3 still incomplete.
+# Job 1 (dir: ssu_aln/ssu_aln.1) completed successfully! 1/3 still incomplete.
+# Job 2 (dir: ssu_aln/ssu_aln.2) completed successfully! 0/3 still incomplete.
+#
+# All 3 jobs successfully completed.
+# About to merge their output:
+#
+# Executing:  ssu-merge ssu_aln
+#
+################################################################################
+#

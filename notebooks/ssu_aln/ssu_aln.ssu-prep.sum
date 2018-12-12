@@ -1,0 +1,36 @@
+# _ssu-prep :: prepare SSU rRNA sequences for parallel ssu-align jobs
+# SSU-ALIGN 0.1.1 (Feb 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# command: _ssu-prep -x -f -b 50 --dna --rfonly /home/be68/Hyphosphere/data/HyphalOTUs.fa ssu_aln 1
+# date:    Sun Aug  5 16:14:42 2018
+#
+# Validating input sequence file ... done.
+#
+# Preparing 1 ssu-align jobs ...
+# Partitioning seqs with goal of equalizing total number of nucleotides per job ...
+#
+# output file name      description                                         
+# --------------------  ----------------------------------------------------
+  ssu_aln/HyphalOTUs.fa.1  partition 1 FASTA sequence file (126 seqs; 31879 nt)
+  ssu_aln.ssu-align.sh  shell script that will execute 1 ssu-align jobs
+#
+################################################################################
+# To execute all 1 ssu-align jobs, run the shell script with the command:
+#	"ssu_aln.ssu-align.sh"
+# (it is an executable file)
+################################################################################
+#
+# The final job will merge the output from all jobs once they are all finished.
+#
+# If one or more jobs fail: rerun the failed jobs, wait for them to finish,
+# and then perform manual merge from this directory by executing:
+#	ssu-merge ssu_aln
+#
+# List of executed commands saved in:     ssu_aln/ssu_aln.ssu-prep.log.
+# Output printed to the screen saved in:  ssu_aln/ssu_aln.ssu-prep.sum.
+#
+# CPU time:  00:00:00.30  (hh:mm:ss)
+# 
+# SSU-ALIGN-SUCCESS

@@ -1,0 +1,131 @@
+# ssu-cmalign :: align sequences to an RNA CM
+# INFERNAL s0.1.1 (Feb 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# command: ssu-cmalign --cm-name archaea --dna --matchonly --mxsize 4096 --no-null3 --sub --ifile ssu_aln/ssu_aln.1/ssu_aln.1.archaea.ifile -o ssu_aln/ssu_aln.1/ssu_aln.1.archaea.stk /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm ssu_aln/ssu_aln.1/ssu_aln.1.archaea.fa
+# date:    Tue Dec 11 15:10:21 2018
+#
+# cm name                    algorithm  config  sub  bands     tau
+# -------------------------  ---------  ------  ---  -----  ------
+# archaea                      opt acc  global  yes    hmm   1e-07
+#
+#                                bit scores                            
+#                             ------------------                       
+#   seq idx  seq name    len     total    struct  avg prob      elapsed
+# ---------  --------  -----  --------  --------  --------  -----------
+          1  ASV29       253    321.39     56.22     1.000  00:00:00.13
+          2  ASV30       253    329.16     57.43     1.000  00:00:00.12
+          3  ASV67       253    324.28     53.19     1.000  00:00:00.13
+          4  ASV87       253    338.81     57.42     1.000  00:00:00.13
+          5  ASV95       253    324.57     62.94     1.000  00:00:00.13
+          6  ASV132      253    312.65     50.13     1.000  00:00:00.13
+          7  ASV149      253    327.74     56.10     1.000  00:00:00.13
+          8  ASV158      252    293.80     84.19     1.000  00:00:00.12
+          9  ASV197      253    309.45     48.63     1.000  00:00:00.13
+         10  ASV253      253    319.76     48.85     1.000  00:00:00.13
+         11  ASV300      253    333.48     53.40     1.000  00:00:00.13
+         12  ASV355      253    315.24     47.11     1.000  00:00:00.13
+         13  ASV378      253    319.59     48.12     1.000  00:00:00.12
+         14  ASV386      253    314.55     32.92     1.000  00:00:00.13
+         15  ASV514      253    318.06     46.71     1.000  00:00:00.13
+         16  ASV557      253    323.38     49.91     1.000  00:00:00.13
+         17  ASV593      253    319.97     48.70     1.000  00:00:00.13
+         18  ASV917      252    287.94     67.98     1.000  00:00:00.13
+         19  ASV953      253    324.40     36.79     0.997  00:00:00.13
+         20  ASV1103     253    297.51     61.31     0.999  00:00:00.13
+         21  ASV1133     253    305.84     64.14     0.999  00:00:00.13
+         22  ASV1152     253    319.33     58.55     1.000  00:00:00.13
+         23  ASV1207     253    314.65     23.00     0.998  00:00:00.13
+         24  ASV1230     253    311.92     23.00     0.998  00:00:00.12
+         25  ASV1531     253    324.74     44.53     1.000  00:00:00.13
+         26  ASV1591     253    332.37     34.95     0.998  00:00:00.13
+         27  ASV1761     252    318.20     77.86     1.000  00:00:00.13
+         28  ASV1815     253    319.42     48.12     1.000  00:00:00.13
+         29  ASV2257     253    324.93     52.17     1.000  00:00:00.12
+         30  ASV2345     253    316.13     57.05     1.000  00:00:00.14
+# Alignment saved in file ssu_aln/ssu_aln.1/ssu_aln.1.archaea.stk.
+# Per-sequence insert information saved in file ssu_aln/ssu_aln.1/ssu_aln.1.archaea.ifile.
+#
+# CPU time: 4.00u 0.02s 00:00:04.01 Elapsed: 00:00:04.05
+# ssu-cmalign :: align sequences to an RNA CM
+# INFERNAL s0.1.1 (Feb 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# command: ssu-cmalign --cm-name archaea --dna --matchonly --mxsize 4096 --no-null3 --sub --ifile ssu_aln/ssu_aln.2/ssu_aln.2.archaea.ifile -o ssu_aln/ssu_aln.2/ssu_aln.2.archaea.stk /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm ssu_aln/ssu_aln.2/ssu_aln.2.archaea.fa
+# date:    Tue Dec 11 15:10:25 2018
+#
+# cm name                    algorithm  config  sub  bands     tau
+# -------------------------  ---------  ------  ---  -----  ------
+# archaea                      opt acc  global  yes    hmm   1e-07
+#
+#                                bit scores                            
+#                             ------------------                       
+#   seq idx  seq name    len     total    struct  avg prob      elapsed
+# ---------  --------  -----  --------  --------  --------  -----------
+          1  ASV2973     253    325.69     34.42     0.998  00:00:00.12
+          2  ASV3086     253    330.14     42.66     0.999  00:00:00.12
+          3  ASV3414     253    321.43     76.07     1.000  00:00:00.13
+          4  ASV3971     253    346.74     40.55     1.000  00:00:00.13
+          5  ASV4124     253    251.42     88.31     0.996  00:00:00.13
+          6  ASV4291     253    314.50     30.32     0.996  00:00:00.13
+          7  ASV4316     253    298.39     63.90     0.999  00:00:00.13
+          8  ASV4351     253    304.98     66.00     1.000  00:00:00.13
+          9  ASV4770     253    303.53     64.91     1.000  00:00:00.13
+         10  ASV4891     253    323.75     51.49     1.000  00:00:00.13
+         11  ASV4897     247    249.05     73.56     0.998  00:00:00.12
+         12  ASV5353     253    315.65     87.90     1.000  00:00:00.13
+         13  ASV5366     253    314.19     47.11     1.000  00:00:00.13
+         14  ASV5376     247    233.13     70.89     0.998  00:00:00.12
+         15  ASV5455     247    243.91     68.24     0.998  00:00:00.13
+         16  ASV5461     252    320.93     77.86     1.000  00:00:00.13
+# Alignment saved in file ssu_aln/ssu_aln.2/ssu_aln.2.archaea.stk.
+# Per-sequence insert information saved in file ssu_aln/ssu_aln.2/ssu_aln.2.archaea.ifile.
+#
+# CPU time: 2.18u 0.02s 00:00:02.20 Elapsed: 00:00:02.22
+# ssu-cmalign :: align sequences to an RNA CM
+# INFERNAL s0.1.1 (Feb 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# command: ssu-cmalign --cm-name archaea --dna --matchonly --mxsize 4096 --no-null3 --sub --ifile ssu_aln/ssu_aln.3/ssu_aln.3.archaea.ifile -o ssu_aln/ssu_aln.3/ssu_aln.3.archaea.stk /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm ssu_aln/ssu_aln.3/ssu_aln.3.archaea.fa
+# date:    Tue Dec 11 15:10:28 2018
+#
+# cm name                    algorithm  config  sub  bands     tau
+# -------------------------  ---------  ------  ---  -----  ------
+# archaea                      opt acc  global  yes    hmm   1e-07
+#
+#                                bit scores                            
+#                             ------------------                       
+#   seq idx  seq name    len     total    struct  avg prob      elapsed
+# ---------  --------  -----  --------  --------  --------  -----------
+          1  ASV5899     252    300.60     97.79     1.000  00:00:00.13
+          2  ASV6044     253    309.11     68.50     1.000  00:00:00.12
+          3  ASV6057     253    316.71     47.85     1.000  00:00:00.12
+          4  ASV6231     253    303.85     74.89     1.000  00:00:00.13
+          5  ASV6543     253    328.10     40.63     0.999  00:00:00.12
+          6  ASV6609     253    306.26     73.52     1.000  00:00:00.13
+          7  ASV6838     253    327.66     72.98     1.000  00:00:00.12
+          8  ASV6895     253    307.32     50.87     1.000  00:00:00.13
+          9  ASV7028     253    290.22     55.35     0.999  00:00:00.12
+         10  ASV7044     253    303.29     67.19     0.999  00:00:00.13
+         11  ASV7093     253    306.82     69.28     1.000  00:00:00.13
+         12  ASV7139     253    300.94     60.86     0.999  00:00:00.13
+         13  ASV7218     253    303.91     65.32     1.000  00:00:00.12
+         14  ASV7536     253    307.24     77.88     1.000  00:00:00.13
+         15  ASV7560     247    225.11     70.67     0.998  00:00:00.12
+         16  ASV7910     247    222.33     59.89     0.998  00:00:00.13
+         17  ASV8400     253    300.77     68.16     1.000  00:00:00.13
+         18  ASV8471     253    333.76     67.45     1.000  00:00:00.12
+         19  ASV8987     253    244.52     91.07     0.996  00:00:00.13
+         20  ASV9054     252    292.93     80.74     1.000  00:00:00.12
+         21  ASV9072     253    308.94     61.78     0.999  00:00:00.13
+         22  ASV9600     248    224.14     70.57     0.993  00:00:00.13
+         23  ASV10301    247    225.15     68.66     0.998  00:00:00.12
+         24  ASV11203    253    253.52     87.83     0.996  00:00:00.13
+         25  ASV15116    245    307.52     66.17     0.995  00:00:00.13
+# Alignment saved in file ssu_aln/ssu_aln.3/ssu_aln.3.archaea.stk.
+# Per-sequence insert information saved in file ssu_aln/ssu_aln.3/ssu_aln.3.archaea.ifile.
+#
+# CPU time: 3.27u 0.03s 00:00:03.30 Elapsed: 00:00:03.31

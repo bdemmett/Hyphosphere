@@ -1,0 +1,137 @@
+# Insert information file created by cmalign.
+# This file includes 2+<nseq> non-'#' pre-fixed lines per model used for alignment,
+# where <nseq> is the number of sequences in the target file.
+# The first non-'#' prefixed line per model includes 2 tokens, separated by a single space (' '):
+# The first token is the model name and the second is the consensus length of the model (<clen>).
+# The following <nseq> lines include (4+3*<n>) whitespace delimited tokens per line.
+# The format for these <nseq> lines is:
+#   <seqname> <seqlen> <spos> <epos> <c_1> <u_1> <i_1> <c_2> <u_2> <i_2> .... <c_x> <u_x> <i_x> .... <c_n> <u_n> <i_n>
+#   indicating <seqname> has >= 1 inserted residues after <n> different consensus positions,
+#   <seqname> is the name of the sequence
+#   <seqlen>  is the unaligned length of the sequence
+#   <spos>    is the first (5'-most) consensus position filled by a nongap for this sequence (-1 if 0 nongap consensus posns)
+#   <epos>    is the final (3'-most) consensus position filled by a nongap for this sequence (-1 if 0 nongap consensus posns)
+#   <seqlen>  is the unaligned length of the sequence
+#   <c_x> is a consensus position (between 0 and <clen>; if 0: inserts before 1st consensus posn)
+#   <u_x> is the *unaligned* position (b/t 1 and <seqlen>) in <seqname> of the first inserted residue after <c_x>.
+#   <i_x> is the number of inserted residues after position <c_x> for <seqname>.
+# Lines for sequences with 0 inserted residues will include only <seqname> <seqlen> <spos> <epos>.
+# The final non-'#' prefixed line per model includes only '//', indicating the end of info for a model.
+#
+archaea 1508
+ASV29 253 496 749
+ASV30 253 496 749
+ASV67 253 496 749
+ASV87 253 496 749
+ASV95 253 496 749
+ASV132 253 496 749
+ASV149 253 496 749
+ASV158 252 497 749
+ASV197 253 496 749
+ASV253 253 496 749
+ASV300 253 496 749
+ASV355 253 496 749
+ASV378 253 496 749
+ASV386 253 496 749
+ASV514 253 496 749
+ASV557 253 496 749
+ASV593 253 496 749
+ASV917 252 497 749
+ASV953 253 496 749
+ASV1103 253 496 749
+ASV1133 253 496 749
+ASV1152 253 496 749
+ASV1207 253 496 749
+ASV1230 253 496 749
+ASV1531 253 496 749
+ASV1591 253 496 749
+ASV1761 252 498 749
+ASV1815 253 496 749
+ASV2257 253 496 749
+ASV2345 253 496 749
+//
+# Insert information file created by cmalign.
+# This file includes 2+<nseq> non-'#' pre-fixed lines per model used for alignment,
+# where <nseq> is the number of sequences in the target file.
+# The first non-'#' prefixed line per model includes 2 tokens, separated by a single space (' '):
+# The first token is the model name and the second is the consensus length of the model (<clen>).
+# The following <nseq> lines include (4+3*<n>) whitespace delimited tokens per line.
+# The format for these <nseq> lines is:
+#   <seqname> <seqlen> <spos> <epos> <c_1> <u_1> <i_1> <c_2> <u_2> <i_2> .... <c_x> <u_x> <i_x> .... <c_n> <u_n> <i_n>
+#   indicating <seqname> has >= 1 inserted residues after <n> different consensus positions,
+#   <seqname> is the name of the sequence
+#   <seqlen>  is the unaligned length of the sequence
+#   <spos>    is the first (5'-most) consensus position filled by a nongap for this sequence (-1 if 0 nongap consensus posns)
+#   <epos>    is the final (3'-most) consensus position filled by a nongap for this sequence (-1 if 0 nongap consensus posns)
+#   <seqlen>  is the unaligned length of the sequence
+#   <c_x> is a consensus position (between 0 and <clen>; if 0: inserts before 1st consensus posn)
+#   <u_x> is the *unaligned* position (b/t 1 and <seqlen>) in <seqname> of the first inserted residue after <c_x>.
+#   <i_x> is the number of inserted residues after position <c_x> for <seqname>.
+# Lines for sequences with 0 inserted residues will include only <seqname> <seqlen> <spos> <epos>.
+# The final non-'#' prefixed line per model includes only '//', indicating the end of info for a model.
+#
+archaea 1508
+ASV2973 253 496 749
+ASV3086 253 496 749
+ASV3414 253 497 749
+ASV3971 253 497 749
+ASV4124 253 498 749  686 190 1  687 191 1
+ASV4291 253 496 749
+ASV4316 253 496 749
+ASV4351 253 496 749
+ASV4770 253 496 749
+ASV4891 253 496 749
+ASV4897 247 498 745
+ASV5353 253 497 749
+ASV5366 253 496 749
+ASV5376 247 498 745
+ASV5455 247 498 745
+ASV5461 252 498 749
+//
+# Insert information file created by cmalign.
+# This file includes 2+<nseq> non-'#' pre-fixed lines per model used for alignment,
+# where <nseq> is the number of sequences in the target file.
+# The first non-'#' prefixed line per model includes 2 tokens, separated by a single space (' '):
+# The first token is the model name and the second is the consensus length of the model (<clen>).
+# The following <nseq> lines include (4+3*<n>) whitespace delimited tokens per line.
+# The format for these <nseq> lines is:
+#   <seqname> <seqlen> <spos> <epos> <c_1> <u_1> <i_1> <c_2> <u_2> <i_2> .... <c_x> <u_x> <i_x> .... <c_n> <u_n> <i_n>
+#   indicating <seqname> has >= 1 inserted residues after <n> different consensus positions,
+#   <seqname> is the name of the sequence
+#   <seqlen>  is the unaligned length of the sequence
+#   <spos>    is the first (5'-most) consensus position filled by a nongap for this sequence (-1 if 0 nongap consensus posns)
+#   <epos>    is the final (3'-most) consensus position filled by a nongap for this sequence (-1 if 0 nongap consensus posns)
+#   <seqlen>  is the unaligned length of the sequence
+#   <c_x> is a consensus position (between 0 and <clen>; if 0: inserts before 1st consensus posn)
+#   <u_x> is the *unaligned* position (b/t 1 and <seqlen>) in <seqname> of the first inserted residue after <c_x>.
+#   <i_x> is the number of inserted residues after position <c_x> for <seqname>.
+# Lines for sequences with 0 inserted residues will include only <seqname> <seqlen> <spos> <epos>.
+# The final non-'#' prefixed line per model includes only '//', indicating the end of info for a model.
+#
+archaea 1508
+ASV5899 252 498 749
+ASV6044 253 496 749
+ASV6057 253 496 749
+ASV6231 253 497 749
+ASV6543 253 496 749
+ASV6609 253 496 749
+ASV6838 253 497 749
+ASV6895 253 496 749
+ASV7028 253 496 749
+ASV7044 253 496 749
+ASV7093 253 496 749
+ASV7139 253 496 749
+ASV7218 253 496 749
+ASV7536 253 497 749
+ASV7560 247 498 745
+ASV7910 247 498 745
+ASV8400 253 496 749
+ASV8471 253 497 749
+ASV8987 253 498 749  686 190 1  687 191 1
+ASV9054 252 498 749
+ASV9072 253 496 749
+ASV9600 248 498 745  615 118 1
+ASV10301 247 498 745
+ASV11203 253 498 749  686 190 1  687 191 1
+ASV15116 245 499 744
+//
