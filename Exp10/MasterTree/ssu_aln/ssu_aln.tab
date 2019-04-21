@@ -1,0 +1,829 @@
+# command:    ssu-cmsearch --hmm-cW 1.5 --no-null3 --noalign -T -1 --tab ssu_aln/ssu_aln.1/ssu_aln.1.tab --viterbi /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm ssu_aln/IsolateSeqs.fasta.1
+# date:       Fri Apr 19 15:40:58 2019
+# num seqs:   55
+# dbsize(Mb): 0.141452
+#
+# Pre-search info for CM 1: archaea
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  vit  loc      -       -1.00
+#
+# CM: archaea
+#                                    target coord   query coord                         
+#                          ----------------------  ------------                         
+# model name  target name       start        stop  start   stop    bit sc   E-value  GC%
+# ----------  -----------  ----------  ----------  -----  -----  --------  --------  ---
+  archaea     BE26                  2        1326      1   1508    664.26         -   54
+  archaea     BE27                  8        1332      1   1508    664.26         -   54
+  archaea     BE28                 10        1334      1   1508    664.26         -   54
+  archaea     BE29                  1        1321      1   1508    513.78         -   54
+  archaea     BE30                  1        1321      1   1508    513.78         -   54
+  archaea     BE31                  1        1292      1   1508    548.88         -   53
+  archaea     BE31               1078        1059      1   1508     -0.43         -   60
+  archaea     BE32                  1        1294      1   1508    539.38         -   53
+  archaea     BE32               1078        1059      1   1508     -0.43         -   60
+  archaea     BE33                  5        1097      1   1508    459.87         -   59
+  archaea     BE34                  2        1290      1   1508    545.26         -   52
+  archaea     BE34               1079        1060      1   1508     -0.43         -   60
+  archaea     BE35                  3        1064      1   1508    394.64         -   56
+  archaea     BE36                  1        1317      1   1508    660.79         -   55
+  archaea     BE38                  2        1316      1   1508    596.59         -   54
+  archaea     BE39                  5        1301      1   1508    581.58         -   56
+  archaea     BE40                  1        1319      1   1508    478.21         -   54
+  archaea     BE41                  4        1287      1   1508    543.85         -   55
+  archaea     BE41                600         586      1   1508      1.23         -   47
+  archaea     BE42                  1        1318      1   1508    675.37         -   55
+  archaea     BE43                  8        1332      1   1508    664.26         -   54
+  archaea     BE44                128        1316      1   1508    581.03         -   53
+  archaea     BE44                368         349      1   1508      0.79         -   45
+  archaea     BE45                  6        1330      1   1508    664.26         -   54
+  archaea     BE46                128        1315      1   1508    582.15         -   53
+  archaea     BE47                  2        1324      1   1508    596.27         -   54
+  archaea     BE48                  5        1321      1   1508    523.26         -   55
+  archaea     BE49                100        1274      1   1508    552.74         -   55
+  archaea     BE49                546         537      1   1508      0.79         -   40
+  archaea     BE50                  1        1331      1   1508    625.18         -   56
+  archaea     BE50                618         609      1   1508      0.79         -   40
+  archaea     BE51                  2        1285      1   1508    446.27         -   48
+  archaea     BE51               1075        1056      1   1508     -0.43         -   60
+  archaea     BE52                  1        1324      1   1508    516.75         -   55
+  archaea     BE53                  1        1270      1   1508    562.77         -   55
+  archaea     BE53                523         508      1   1508      1.30         -   44
+  archaea     BE54                  2        1285      1   1508    543.85         -   55
+  archaea     BE54                598         584      1   1508      1.23         -   47
+  archaea     BE55                127        1314      1   1508    583.31         -   53
+  archaea     BE56                126        1313      1   1508    573.50         -   53
+  archaea     BE57                  1        1293      1   1508    550.85         -   53
+  archaea     BE57               1078        1059      1   1508     -0.43         -   60
+  archaea     BE59                  2        1262      1   1508    565.15         -   54
+  archaea     BE59                524         509      1   1508      1.30         -   44
+  archaea     BE60                  1        1313      1   1508    513.74         -   54
+  archaea     BE61                127        1324      1   1508    582.06         -   53
+  archaea     BE62                126        1313      1   1508    584.70         -   54
+  archaea     BE63                  4        1328      1   1508    664.26         -   54
+  archaea     BE64                  7        1331      1   1508    664.26         -   54
+  archaea     BE65                  6        1330      1   1508    679.50         -   54
+  archaea     BE65B                 5        1329      1   1508    664.26         -   54
+  archaea     BE66                  7        1330      1   1508    600.76         -   51
+  archaea     BE68                  4        1287      1   1508    539.16         -   55
+  archaea     BE68                600         586      1   1508      1.23         -   47
+  archaea     BE69                  1        1310      1   1508    513.52         -   54
+  archaea     BE70                  1        1261      1   1508    570.33         -   55
+  archaea     BE70                523         508      1   1508      1.30         -   44
+  archaea     BE71                  4        1302      1   1508    632.06         -   57
+  archaea     BE72                  3        1262      1   1508    573.84         -   57
+  archaea     BE72                545         536      1   1508      0.79         -   40
+  archaea     BE74                  7        1330      1   1508    600.76         -   51
+  archaea     BE75                  7         738      1   1508    496.65         -   54
+  archaea     BE76                  6         737      1   1508    496.65         -   54
+  archaea     BE79                  5        1327      1   1508    700.20         -   55
+  archaea     BE79                590         578      1   1508     -0.63         -   46
+  archaea     BE80                  9        1332      1   1508    667.03         -   55
+  archaea     BE80                593         581      1   1508     -0.63         -   46
+  archaea     BE81                  9        1332      1   1508    667.03         -   55
+  archaea     BE81                593         581      1   1508     -0.63         -   46
+  archaea     BE82                  1        1263      1   1508    575.53         -   55
+  archaea     BE82                545         536      1   1508      0.79         -   40
+  archaea     BE83                  2        1250      1   1508    514.42         -   53
+  archaea     BE83                478         447      1   1508      1.96         -   56
+  archaea     BE84                  2        1276      1   1508    574.99         -   55
+  archaea     BE84                480         449      1   1508      1.96         -   59
+  archaea     BE85                  4        1300      1   1508    638.95         -   58
+#
+# Post-search info for CM 1: archaea
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  vit  loc      -       -1.00        76      0.4927
+#
+#    run time  (hr:min:sec)
+# -----------
+#    00:00:09
+#
+# Pre-search info for CM 2: bacteria
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  vit  loc      -       -1.00
+#
+# CM: bacteria
+#                                    target coord   query coord                         
+#                          ----------------------  ------------                         
+# model name  target name       start        stop  start   stop    bit sc   E-value  GC%
+# ----------  -----------  ----------  ----------  -----  -----  --------  --------  ---
+  bacteria    BE26                  1        1335      1   1582   1906.75         -   54
+  bacteria    BE27                  4        1341      1   1582   1908.96         -   54
+  bacteria    BE28                  6        1343      1   1582   1908.96         -   54
+  bacteria    BE29                  1        1322      1   1582   1792.55         -   54
+  bacteria    BE30                  1        1322      1   1582   1792.55         -   54
+  bacteria    BE31                  1        1292      1   1582   1439.14         -   53
+  bacteria    BE31               1104        1055      1   1582     -0.32         -   58
+  bacteria    BE32                  1        1296      1   1582   1430.89         -   53
+  bacteria    BE32               1104        1055      1   1582     -0.32         -   58
+  bacteria    BE33                  2        1105      1   1582   1502.71         -   58
+  bacteria    BE34                  2        1289      1   1582   1436.67         -   52
+  bacteria    BE34               1105        1056      1   1582     -0.32         -   58
+  bacteria    BE35                  2        1064      1   1582   1446.78         -   56
+  bacteria    BE36                  1        1326      1   1582   1856.43         -   55
+  bacteria    BE38                  2        1325      1   1582   1913.54         -   54
+  bacteria    BE39                  2        1311      1   1582   1830.96         -   56
+  bacteria    BE40                  1        1319      1   1582   1772.69         -   54
+  bacteria    BE41                  1        1294      1   1582   1648.61         -   55
+  bacteria    BE42                  1        1329      1   1582   1897.78         -   55
+  bacteria    BE43                  4        1345      1   1582   1910.64         -   54
+  bacteria    BE44                  1        1328      1   1582   1833.28         -   53
+  bacteria    BE45                  2        1339      1   1582   1908.96         -   54
+  bacteria    BE46                  2        1324      1   1582   1908.81         -   54
+  bacteria    BE47                  1        1324      1   1582   1909.14         -   54
+  bacteria    BE48                  5        1330      1   1582   1837.77         -   55
+  bacteria    BE49                  1        1276      1   1582   1751.57         -   55
+  bacteria    BE50                  1        1329      1   1582   1790.38         -   56
+  bacteria    BE51                  2        1284      1   1582   1405.75         -   48
+  bacteria    BE52                  1        1323      1   1582   1792.06         -   55
+  bacteria    BE53                  1        1269      1   1582   1824.84         -   55
+  bacteria    BE54                  1        1292      1   1582   1644.67         -   55
+  bacteria    BE55                  1        1319      1   1582   1906.10         -   54
+  bacteria    BE56                  1        1322      1   1582   1903.02         -   54
+  bacteria    BE57                  1        1294      1   1582   1442.51         -   52
+  bacteria    BE57               1104        1055      1   1582     -0.32         -   58
+  bacteria    BE59                  1        1272      1   1582   1821.25         -   54
+  bacteria    BE60                  1        1318      1   1582   1789.89         -   54
+  bacteria    BE61                  1        1324      1   1582   1906.95         -   54
+  bacteria    BE62                  1        1322      1   1582   1876.94         -   54
+  bacteria    BE63                  2        1337      1   1582   1907.65         -   54
+  bacteria    BE64                  3        1342      1   1582   1910.88         -   54
+  bacteria    BE65                  1        1343      1   1582   1915.09         -   54
+  bacteria    BE65B                 1        1341      1   1582   1911.67         -   54
+  bacteria    BE66                  3        1339      1   1582   1874.15         -   51
+  bacteria    BE68                  1        1292      1   1582   1638.20         -   55
+  bacteria    BE69                  1        1315      1   1582   1783.92         -   54
+  bacteria    BE70                  1        1272      1   1582   1808.24         -   55
+  bacteria    BE71                  2        1313      1   1582   1851.98         -   56
+  bacteria    BE72                  1        1272      1   1582   1749.81         -   57
+  bacteria    BE74                  3        1337      1   1582   1873.90         -   51
+  bacteria    BE75                  1         750      1   1582   1127.86         -   54
+  bacteria    BE76                  1         750      1   1582   1127.09         -   54
+  bacteria    BE79                  1        1336      1   1582   1909.76         -   55
+  bacteria    BE80                  5        1339      1   1582   1860.38         -   55
+  bacteria    BE81                  5        1339      1   1582   1860.38         -   55
+  bacteria    BE82                  1        1275      1   1582   1811.72         -   55
+  bacteria    BE83                  1        1248      1   1582   1721.86         -   53
+  bacteria    BE84                  1        1276      1   1582   1782.44         -   55
+  bacteria    BE85                  1        1309      1   1582   1835.72         -   58
+#
+# Post-search info for CM 2: bacteria
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  vit  loc      -       -1.00        59      0.5008
+#
+#    run time  (hr:min:sec)
+# -----------
+#    00:00:09
+#
+# Pre-search info for CM 3: eukarya
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  vit  loc      -       -1.00
+#
+# CM: eukarya
+#                                    target coord   query coord                         
+#                          ----------------------  ------------                         
+# model name  target name       start        stop  start   stop    bit sc   E-value  GC%
+# ----------  -----------  ----------  ----------  -----  -----  --------  --------  ---
+  eukarya     BE26                796         837      1   1881     29.98         -   52
+  eukarya     BE26               1039        1026      1   1881     -0.63         -   36
+  eukarya     BE27                802         843      1   1881     29.98         -   52
+  eukarya     BE27               1045        1032      1   1881     -0.63         -   36
+  eukarya     BE28                804         845      1   1881     29.98         -   52
+  eukarya     BE28               1047        1034      1   1881     -0.63         -   36
+  eukarya     BE29                783         824      1   1881     19.85         -   55
+  eukarya     BE30                783         824      1   1881     19.85         -   55
+  eukarya     BE31                398         417      1   1881      9.20         -   65
+  eukarya     BE32                398         417      1   1881      9.20         -   65
+  eukarya     BE33                145         193      1   1881     19.49         -   59
+  eukarya     BE34                399         418      1   1881      9.20         -   65
+  eukarya     BE35                143         191      1   1881     17.65         -   55
+  eukarya     BE36                789         830      1   1881     19.85         -   52
+  eukarya     BE38               1240        1310      1   1881      9.53         -   56
+  eukarya     BE39                145         193      1   1881     17.65         -   55
+  eukarya     BE40                783         824      1   1881     14.04         -   48
+  eukarya     BE41               1211        1281      1   1881     21.36         -   58
+  eukarya     BE42                788         829      1   1881     26.59         -   57
+  eukarya     BE42               1031        1018      1   1881     -0.63         -   36
+  eukarya     BE43                802         843      1   1881     29.98         -   52
+  eukarya     BE43               1045        1032      1   1881     -0.63         -   36
+  eukarya     BE44                787         828      1   1881     13.35         -   48
+  eukarya     BE45                800         841      1   1881     29.98         -   52
+  eukarya     BE45               1043        1030      1   1881     -0.63         -   36
+  eukarya     BE46               1239        1309      1   1881      9.53         -   56
+  eukarya     BE47               1238        1308      1   1881      9.53         -   56
+  eukarya     BE48               1298        1315      1   1881      5.38         -   61
+  eukarya     BE49               1151        1254      1   1881     14.09         -   57
+  eukarya     BE50                807         848      1   1881     15.88         -   48
+  eukarya     BE51                397         416      1   1881      9.20         -   65
+  eukarya     BE52                783         824      1   1881     19.85         -   55
+  eukarya     BE53                730         771      1   1881     14.04         -   48
+  eukarya     BE54               1209        1279      1   1881     21.36         -   58
+  eukarya     BE55               1238        1308      1   1881      9.53         -   56
+  eukarya     BE56               1237        1307      1   1881      9.53         -   56
+  eukarya     BE57                398         417      1   1881      9.20         -   65
+  eukarya     BE59                731         772      1   1881     14.04         -   48
+  eukarya     BE60                785         826      1   1881     19.85         -   55
+  eukarya     BE61               1238        1308      1   1881      9.53         -   56
+  eukarya     BE62                414         433      1   1881      9.20         -   65
+  eukarya     BE63                798         839      1   1881     29.98         -   52
+  eukarya     BE63               1041        1028      1   1881     -0.63         -   36
+  eukarya     BE64                801         842      1   1881     29.98         -   52
+  eukarya     BE64               1044        1031      1   1881     -0.63         -   36
+  eukarya     BE65                800         841      1   1881     26.59         -   57
+  eukarya     BE65               1043        1030      1   1881     -0.63         -   36
+  eukarya     BE65B               799         840      1   1881     29.98         -   52
+  eukarya     BE65B              1042        1029      1   1881     -0.63         -   36
+  eukarya     BE66                800         841      1   1881     12.64         -   52
+  eukarya     BE68               1211        1281      1   1881     15.09         -   57
+  eukarya     BE69                782         823      1   1881     19.85         -   55
+  eukarya     BE70                730         771      1   1881     14.04         -   48
+  eukarya     BE71                145         193      1   1881     24.40         -   53
+  eukarya     BE72               1186        1256      1   1881     11.54         -   62
+  eukarya     BE74                800         841      1   1881     12.64         -   52
+  eukarya     BE75                208         249      1   1881     26.59         -   57
+  eukarya     BE75                451         438      1   1881     -0.63         -   36
+  eukarya     BE76                207         248      1   1881     26.59         -   57
+  eukarya     BE76                450         437      1   1881     -0.63         -   36
+  eukarya     BE79                799         840      1   1881     29.98         -   52
+  eukarya     BE79               1040        1027      1   1881     -0.63         -   36
+  eukarya     BE80                802         843      1   1881     29.98         -   52
+  eukarya     BE81                802         843      1   1881     29.98         -   52
+  eukarya     BE82                732         773      1   1881     14.04         -   48
+  eukarya     BE83                731         772      1   1881     14.04         -   48
+  eukarya     BE84                733         774      1   1881     14.04         -   48
+  eukarya     BE85                145         193      1   1881     29.36         -   59
+#
+# Post-search info for CM 3: eukarya
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  vit  loc      -       -1.00        68      0.0193
+#
+#    run time  (hr:min:sec)
+# -----------
+#    00:00:09
+# command:    ssu-cmsearch --hmm-cW 1.5 --no-null3 --noalign -T -1 --tab ssu_aln/ssu_aln.2/ssu_aln.2.tab --viterbi /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm ssu_aln/IsolateSeqs.fasta.2
+# date:       Fri Apr 19 15:40:58 2019
+# num seqs:   56
+# dbsize(Mb): 0.140208
+#
+# Pre-search info for CM 1: archaea
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  vit  loc      -       -1.00
+#
+# CM: archaea
+#                                    target coord   query coord                         
+#                          ----------------------  ------------                         
+# model name  target name       start        stop  start   stop    bit sc   E-value  GC%
+# ----------  -----------  ----------  ----------  -----  -----  --------  --------  ---
+  archaea     BE88                  1        1261      1   1508    545.64         -   54
+  archaea     BE88                543         534      1   1508      0.79         -   40
+  archaea     BE91                  1        1234      1   1508    510.98         -   53
+  archaea     BE91                476         445      1   1508      1.96         -   56
+  archaea     BE92                135        1314      1   1508    533.64         -   55
+  archaea     BE92                503         494      1   1508      0.79         -   40
+  archaea     BE93                  5        1264      1   1508    581.52         -   53
+  archaea     BE93                546         537      1   1508      0.79         -   40
+  archaea     BE94                  4        1328      1   1508    679.50         -   54
+  archaea     BE95                  1        1257      1   1508    572.22         -   55
+  archaea     BE95                523         508      1   1508      1.30         -   44
+  archaea     BE96                  2        1324      1   1508    596.91         -   54
+  archaea     BE97                  4        1328      1   1508    702.15         -   56
+  archaea     BE97               1195        1182      1   1508      0.43         -   50
+  archaea     BE98                  9         750      1   1508    234.41         -   52
+  archaea     BE98                549         540      1   1508      0.79         -   40
+  archaea     BE100               101        1275      1   1508    552.74         -   55
+  archaea     BE100               547         538      1   1508      0.79         -   40
+  archaea     BE101               135        1313      1   1508    537.81         -   55
+  archaea     BE101               503         494      1   1508      0.79         -   40
+  archaea     BE102                32        1262      1   1508    563.72         -   55
+  archaea     BE102               544         535      1   1508      0.79         -   40
+  archaea     BE103                 2        1319      1   1508    547.32         -   56
+  archaea     BE104                 8        1332      1   1508    656.49         -   55
+  archaea     BE104               130         111      1   1508      0.79         -   50
+  archaea     BE105                 2        1328      1   1508    507.08         -   55
+  archaea     BE107                 3        1322      1   1508    616.05         -   55
+  archaea     BE108                 6        1265      1   1508    559.78         -   53
+  archaea     BE108               547         538      1   1508      0.79         -   40
+  archaea     BE109                 7        1279      1   1508    570.20         -   55
+  archaea     BE109               481         450      1   1508      1.96         -   59
+  archaea     BE110                31        1261      1   1508    575.00         -   55
+  archaea     BE110               543         534      1   1508      0.79         -   40
+  archaea     BE112                 1        1234      1   1508    510.98         -   53
+  archaea     BE112               476         445      1   1508      1.96         -   56
+  archaea     BE113                 5        1278      1   1508    555.41         -   54
+  archaea     BE113               546         537      1   1508      0.79         -   40
+  archaea     BE114                 1        1324      1   1508    516.24         -   55
+  archaea     BE115               140        1316      1   1508    507.21         -   55
+  archaea     BE116               144        1327      1   1508    495.74         -   54
+  archaea     BE117               138        1316      1   1508    532.68         -   55
+  archaea     BE117               506         497      1   1508      0.79         -   40
+  archaea     BE118                 9        1291      1   1508    445.20         -   48
+  archaea     BE118              1082        1063      1   1508     -0.43         -   60
+  archaea     BE120                 2        1249      1   1508    513.91         -   53
+  archaea     BE120               478         447      1   1508      1.96         -   56
+  archaea     BE121                 7        1289      1   1508    445.20         -   48
+  archaea     BE121              1080        1061      1   1508     -0.43         -   60
+  archaea     BE122                 6        1265      1   1508    560.24         -   52
+  archaea     BE122               547         538      1   1508      0.79         -   40
+  archaea     BE123                 6        1277      1   1508    574.21         -   53
+  archaea     BE123               547         538      1   1508      0.79         -   40
+  archaea     BE124                 1        1299      1   1508    514.77         -   51
+  archaea     BE124              1167        1158      1   1508     -0.37         -   50
+  archaea     BE125                 3        1276      1   1508    563.65         -   55
+  archaea     BE125               547         538      1   1508      0.79         -   40
+  archaea     BE126                 7        1264      1   1508    578.20         -   54
+  archaea     BE126               548         539      1   1508      0.79         -   40
+  archaea     BE127               139        1325      1   1508    497.99         -   54
+  archaea     BE127               511         484      1   1508      1.16         -   43
+  archaea     BE128                 8        1277      1   1508    608.78         -   55
+  archaea     BE128               548         539      1   1508      0.79         -   40
+  archaea     BE153                 2        1264      1   1508    551.68         -   54
+  archaea     BE153               526         511      1   1508      1.30         -   44
+  archaea     BE154                 1        1297      1   1508    633.03         -   57
+  archaea     BE156                 1        1292      1   1508    655.44         -   58
+  archaea     BE157                 1        1277      1   1508    552.42         -   54
+  archaea     BE157               525         510      1   1508      1.30         -   44
+  archaea     BE159                 2        1235      1   1508    508.64         -   53
+  archaea     BE159               478         447      1   1508      1.96         -   56
+  archaea     BE163                19         581      1   1508    344.88         -   57
+  archaea     BE164                 1        1295      1   1508    660.69         -   58
+  archaea     BE166                 2        1264      1   1508    548.54         -   54
+  archaea     BE166               526         511      1   1508      1.30         -   44
+  archaea     BE167                 1        1298      1   1508    629.51         -   57
+  archaea     BE168                 2        1276      1   1508    574.99         -   55
+  archaea     BE168               480         449      1   1508      1.96         -   59
+  archaea     BE170                 1        1292      1   1508    656.02         -   58
+  archaea     BE171                 1        1309      1   1508    658.39         -   57
+  archaea     BE172                32        1275      1   1508    575.24         -   55
+  archaea     BE172               544         535      1   1508      0.79         -   40
+  archaea     BE173                 3        1321      1   1508    596.71         -   55
+  archaea     BE177                 7        1266      1   1508    583.98         -   54
+  archaea     BE177               548         539      1   1508      0.79         -   40
+  archaea     BE178                 1        1292      1   1508    659.54         -   59
+  archaea     BE179                 6         737      1   1508    496.65         -   54
+  archaea     BE180                 2        1298      1   1508    584.51         -   56
+  archaea     BE181                 7        1280      1   1508    582.44         -   53
+  archaea     BE181               548         539      1   1508      0.79         -   40
+  archaea     BE182                 4         735      1   1508    496.65         -   54
+  archaea     BE183                 1        1237      1   1508    514.67         -   53
+  archaea     BE183               479         448      1   1508      1.96         -   56
+#
+# Post-search info for CM 1: archaea
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  vit  loc      -       -1.00        92      0.4935
+#
+#    run time  (hr:min:sec)
+# -----------
+#    00:00:10
+#
+# Pre-search info for CM 2: bacteria
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  vit  loc      -       -1.00
+#
+# CM: bacteria
+#                                    target coord   query coord                         
+#                          ----------------------  ------------                         
+# model name  target name       start        stop  start   stop    bit sc   E-value  GC%
+# ----------  -----------  ----------  ----------  -----  -----  --------  --------  ---
+  bacteria    BE88                  1        1271      1   1582   1792.26         -   54
+  bacteria    BE91                  1        1245      1   1582   1717.35         -   53
+  bacteria    BE92                  1        1313      1   1582   1771.98         -   55
+  bacteria    BE93                  1        1276      1   1582   1722.77         -   53
+  bacteria    BE94                  2        1340      1   1582   1912.43         -   54
+  bacteria    BE95                  1        1268      1   1582   1829.09         -   55
+  bacteria    BE95                102          78      1   1582      0.65         -   36
+  bacteria    BE96                  1        1324      1   1582   1914.29         -   54
+  bacteria    BE97                  1        1333      1   1582   1905.52         -   56
+  bacteria    BE98                  9         750      1   1582    967.17         -   52
+  bacteria    BE100                 1        1275      1   1582   1750.15         -   55
+  bacteria    BE101                 1        1313      1   1582   1770.52         -   55
+  bacteria    BE102                 1        1271      1   1582   1786.94         -   55
+  bacteria    BE103                 3        1328      1   1582   1840.22         -   56
+  bacteria    BE104                 6        1339      1   1582   1867.01         -   55
+  bacteria    BE105                 1        1325      1   1582   1780.61         -   54
+  bacteria    BE107                 3        1332      1   1582   1869.76         -   55
+  bacteria    BE108                 1        1277      1   1582   1723.58         -   53
+  bacteria    BE109                 7        1279      1   1582   1773.21         -   55
+  bacteria    BE110                 1        1273      1   1582   1807.79         -   55
+  bacteria    BE112                 1        1244      1   1582   1715.99         -   53
+  bacteria    BE113                 1        1280      1   1582   1728.89         -   54
+  bacteria    BE114                 1        1322      1   1582   1790.19         -   55
+  bacteria    BE115                 1        1317      1   1582   1754.43         -   56
+  bacteria    BE116                 1        1326      1   1582   1778.75         -   54
+  bacteria    BE117                 1        1316      1   1582   1777.77         -   55
+  bacteria    BE118                 9        1291      1   1582   1405.75         -   48
+  bacteria    BE120                 1        1248      1   1582   1721.86         -   53
+  bacteria    BE121                 1        1289      1   1582   1411.29         -   49
+  bacteria    BE122                 1        1276      1   1582   1717.61         -   52
+  bacteria    BE123                 1        1279      1   1582   1768.38         -   53
+  bacteria    BE124                 1        1301      1   1582   1451.97         -   51
+  bacteria    BE125                 1        1275      1   1582   1766.75         -   55
+  bacteria    BE126                 1        1274      1   1582   1754.95         -   54
+  bacteria    BE127                 1        1325      1   1582   1750.51         -   54
+  bacteria    BE128                 8        1276      1   1582   1777.12         -   55
+  bacteria    BE153                 1        1276      1   1582   1799.20         -   54
+  bacteria    BE154                 1        1310      1   1582   1825.69         -   57
+  bacteria    BE156                 1        1303      1   1582   1861.60         -   58
+  bacteria    BE157                 1        1277      1   1582   1797.86         -   54
+  bacteria    BE159                 1        1248      1   1582   1708.39         -   53
+  bacteria    BE163                 8         595      1   1582    853.65         -   57
+  bacteria    BE164                 1        1307      1   1582   1868.25         -   58
+  bacteria    BE166                 1        1274      1   1582   1794.34         -   55
+  bacteria    BE167                 1        1309      1   1582   1845.27         -   57
+  bacteria    BE168                 1        1276      1   1582   1782.44         -   55
+  bacteria    BE170                 1        1302      1   1582   1861.91         -   58
+  bacteria    BE171                 2        1318      1   1582   1849.11         -   57
+  bacteria    BE172                 1        1274      1   1582   1809.73         -   55
+  bacteria    BE173                 3        1334      1   1582   1867.56         -   55
+  bacteria    BE177                 1        1271      1   1582   1718.30         -   54
+  bacteria    BE178                 1        1299      1   1582   1847.72         -   59
+  bacteria    BE179                 1         750      1   1582   1127.09         -   54
+  bacteria    BE180                 1        1309      1   1582   1832.69         -   56
+  bacteria    BE181                 1        1280      1   1582   1727.32         -   53
+  bacteria    BE182                 2         750      1   1582   1128.77         -   54
+  bacteria    BE183                 1        1246      1   1582   1720.07         -   53
+#
+# Post-search info for CM 2: bacteria
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  vit  loc      -       -1.00        57      0.4996
+#
+#    run time  (hr:min:sec)
+# -----------
+#    00:00:09
+#
+# Pre-search info for CM 3: eukarya
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  vit  loc      -       -1.00
+#
+# CM: eukarya
+#                                    target coord   query coord                         
+#                          ----------------------  ------------                         
+# model name  target name       start        stop  start   stop    bit sc   E-value  GC%
+# ----------  -----------  ----------  ----------  -----  -----  --------  --------  ---
+  eukarya     BE88                730         771      1   1881     14.04         -   48
+  eukarya     BE91                729         770      1   1881     14.04         -   48
+  eukarya     BE92                777         818      1   1881     19.85         -   55
+  eukarya     BE93               1155        1258      1   1881     14.09         -   57
+  eukarya     BE94                798         839      1   1881     26.59         -   57
+  eukarya     BE94               1041        1028      1   1881     -0.63         -   36
+  eukarya     BE95                730         771      1   1881     14.04         -   48
+  eukarya     BE96               1238        1308      1   1881      9.53         -   56
+  eukarya     BE97                798         839      1   1881     26.59         -   57
+  eukarya     BE97               1041        1028      1   1881     -0.63         -   36
+  eukarya     BE98                367         386      1   1881      9.20         -   65
+  eukarya     BE100              1152        1255      1   1881     14.09         -   57
+  eukarya     BE101               777         818      1   1881     19.85         -   55
+  eukarya     BE102               731         772      1   1881     14.04         -   48
+  eukarya     BE103               421         440      1   1881      9.20         -   65
+  eukarya     BE104               801         842      1   1881     29.98         -   52
+  eukarya     BE105               784         825      1   1881     19.85         -   55
+  eukarya     BE107               792         833      1   1881     29.98         -   52
+  eukarya     BE108              1156        1259      1   1881     14.09         -   57
+  eukarya     BE109               734         775      1   1881     14.04         -   48
+  eukarya     BE110               730         771      1   1881     14.04         -   48
+  eukarya     BE112               729         770      1   1881     14.04         -   48
+  eukarya     BE113              1155        1258      1   1881     14.09         -   57
+  eukarya     BE114               782         823      1   1881     19.85         -   55
+  eukarya     BE115               782         823      1   1881     19.85         -   55
+  eukarya     BE116               786         827      1   1881     19.85         -   55
+  eukarya     BE117               780         821      1   1881     19.85         -   55
+  eukarya     BE118               404         423      1   1881      9.20         -   65
+  eukarya     BE120               731         772      1   1881     14.04         -   48
+  eukarya     BE121               402         421      1   1881      9.20         -   65
+  eukarya     BE122              1156        1259      1   1881     14.09         -   57
+  eukarya     BE123              1178        1257      1   1881     14.07         -   59
+  eukarya     BE124               773         814      1   1881     13.71         -   48
+  eukarya     BE125               734         775      1   1881     14.04         -   48
+  eukarya     BE126              1155        1258      1   1881     14.09         -   57
+  eukarya     BE127               785         826      1   1881     19.85         -   55
+  eukarya     BE128              1155        1258      1   1881     14.09         -   57
+  eukarya     BE153               733         774      1   1881     14.04         -   48
+  eukarya     BE154               141         189      1   1881     27.18         -   57
+  eukarya     BE156               137         185      1   1881     27.18         -   57
+  eukarya     BE157               732         773      1   1881     14.04         -   48
+  eukarya     BE159               731         772      1   1881     14.04         -   48
+  eukarya     BE163                53          94      1   1881     17.40         -   55
+  eukarya     BE164               140         188      1   1881     27.18         -   57
+  eukarya     BE166               733         774      1   1881     14.04         -   48
+  eukarya     BE167               768         809      1   1881     17.40         -   55
+  eukarya     BE168               733         774      1   1881     14.04         -   48
+  eukarya     BE170               137         185      1   1881     27.18         -   57
+  eukarya     BE171               149         197      1   1881     17.83         -   57
+  eukarya     BE172               731         772      1   1881     14.04         -   48
+  eukarya     BE173               792         833      1   1881     29.98         -   52
+  eukarya     BE177              1157        1260      1   1881     14.09         -   57
+  eukarya     BE178               137         185      1   1881     27.18         -   57
+  eukarya     BE179               207         248      1   1881     26.59         -   57
+  eukarya     BE179               450         437      1   1881     -0.63         -   36
+  eukarya     BE180               142         190      1   1881     17.65         -   55
+  eukarya     BE181              1157        1260      1   1881     14.09         -   57
+  eukarya     BE182               205         246      1   1881     26.59         -   57
+  eukarya     BE182               448         435      1   1881     -0.63         -   36
+  eukarya     BE183               732         773      1   1881     14.04         -   48
+#
+# Post-search info for CM 3: eukarya
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  vit  loc      -       -1.00        60      0.0214
+#
+#    run time  (hr:min:sec)
+# -----------
+#    00:00:09
+# command:    ssu-cmsearch --hmm-cW 1.5 --no-null3 --noalign -T -1 --tab ssu_aln/ssu_aln.3/ssu_aln.3.tab --viterbi /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm ssu_aln/IsolateSeqs.fasta.3
+# date:       Fri Apr 19 15:40:58 2019
+# num seqs:   54
+# dbsize(Mb): 0.135436
+#
+# Pre-search info for CM 1: archaea
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  vit  loc      -       -1.00
+#
+# CM: archaea
+#                                    target coord   query coord                         
+#                          ----------------------  ------------                         
+# model name  target name       start        stop  start   stop    bit sc   E-value  GC%
+# ----------  -----------  ----------  ----------  -----  -----  --------  --------  ---
+  archaea     BE184                32        1276      1   1508    579.30         -   55
+  archaea     BE184               524         509      1   1508      1.30         -   44
+  archaea     BE186                 1        1263      1   1508    607.02         -   56
+  archaea     BE186               549         540      1   1508      0.79         -   40
+  archaea     BE187                 2        1324      1   1508    610.06         -   56
+  archaea     BE190                 1         749      1   1508    431.87         -   54
+  archaea     BE191                 5         736      1   1508    496.65         -   54
+  archaea     BE193               137        1316      1   1508    540.65         -   55
+  archaea     BE194                 7        1264      1   1508    578.20         -   54
+  archaea     BE194               548         539      1   1508      0.79         -   40
+  archaea     BE195                11         742      1   1508    496.65         -   54
+  archaea     BE196                 9        1332      1   1508    697.85         -   54
+  archaea     BE197               137        1302      1   1508    527.12         -   55
+  archaea     BE197               505         496      1   1508      0.79         -   40
+  archaea     BE198                50        1324      1   1508    606.28         -   55
+  archaea     BE201                 3        1290      1   1508    544.18         -   52
+  archaea     BE201              1080        1061      1   1508     -0.43         -   60
+  archaea     BE203                 1        1325      1   1508    688.47         -   55
+  archaea     BE206                 4        1328      1   1508    688.47         -   55
+  archaea     BE207                 4        1328      1   1508    679.50         -   54
+  archaea     BE212                 4        1300      1   1508    642.73         -   58
+  archaea     BE213                 7        1266      1   1508    600.14         -   54
+  archaea     BE213               548         539      1   1508      0.79         -   40
+  archaea     BE215                 6        1265      1   1508    600.14         -   54
+  archaea     BE215               547         538      1   1508      0.79         -   40
+  archaea     BE216                 6        1279      1   1508    555.41         -   54
+  archaea     BE216               547         538      1   1508      0.79         -   40
+  archaea     BE219                 4        1326      1   1508    691.81         -   55
+  archaea     BE219               589         577      1   1508     -0.63         -   46
+  archaea     BE220                 5        1329      1   1508    702.15         -   56
+  archaea     BE220              1196        1183      1   1508      0.43         -   50
+  archaea     BE222                 7        1278      1   1508    554.48         -   54
+  archaea     BE222               548         539      1   1508      0.79         -   40
+  archaea     BE223                 7        1280      1   1508    555.41         -   54
+  archaea     BE223               548         539      1   1508      0.79         -   40
+  archaea     BE224               138        1317      1   1508    533.64         -   55
+  archaea     BE224               506         497      1   1508      0.79         -   40
+  archaea     BE228                 2        1334      1   1508    548.87         -   56
+  archaea     BE231                 6        1330      1   1508    702.15         -   56
+  archaea     BE231              1197        1184      1   1508      0.43         -   50
+  archaea     BE232                 6        1329      1   1508    698.01         -   54
+  archaea     BE233                 1        1310      1   1508    511.74         -   54
+  archaea     BE234                 2        1334      1   1508    548.87         -   56
+  archaea     BE235                 7        1280      1   1508    559.87         -   53
+  archaea     BE235               548         539      1   1508      0.79         -   40
+  archaea     BE236                 4        1328      1   1508    702.15         -   56
+  archaea     BE236              1195        1182      1   1508      0.43         -   50
+  archaea     BE239                 2        1264      1   1508    551.68         -   54
+  archaea     BE239               526         511      1   1508      1.30         -   44
+  archaea     BE240               141        1317      1   1508    507.21         -   55
+  archaea     BE241                 1        1327      1   1508    589.04         -   54
+  archaea     BE242                 4        1293      1   1508    545.38         -   52
+  archaea     BE242              1081        1062      1   1508     -0.43         -   60
+  archaea     BE243                 2        1260      1   1508    551.23         -   55
+  archaea     BE243               526         511      1   1508      1.30         -   44
+  archaea     BE248                 1        1292      1   1508    627.76         -   57
+  archaea     BE249                 5        1264      1   1508    558.95         -   53
+  archaea     BE249               546         537      1   1508      0.79         -   40
+  archaea     BE251                 1        1257      1   1508    572.22         -   55
+  archaea     BE251               523         508      1   1508      1.30         -   44
+  archaea     BE254                 2        1259      1   1508    571.00         -   55
+  archaea     BE254               544         535      1   1508      0.79         -   40
+  archaea     BE255                 3        1262      1   1508    572.72         -   55
+  archaea     BE255               547         538      1   1508      0.79         -   40
+  archaea     BE256                32        1262      1   1508    587.13         -   55
+  archaea     BE256               524         509      1   1508      1.30         -   44
+  archaea     BE257                31         747      1   1508    227.26         -   53
+  archaea     BE257               523         508      1   1508      1.30         -   44
+  archaea     BE258                78        1256      1   1508    550.31         -   55
+  archaea     BE258               522         507      1   1508      1.30         -   44
+  archaea     BE259                 5        1278      1   1508    561.16         -   52
+  archaea     BE259               546         537      1   1508      0.79         -   40
+  archaea     BE260                 1        1301      1   1508    508.89         -   50
+  archaea     BE260              1169        1160      1   1508     -0.37         -   50
+  archaea     BE261                 1        1295      1   1508    626.61         -   57
+  archaea     BE264                 1        1264      1   1508    553.35         -   55
+  archaea     BE264               549         540      1   1508      0.79         -   40
+  archaea     BE265               141        1325      1   1508    500.49         -   54
+  archaea     BE268                 4        1280      1   1508    575.73         -   55
+  archaea     BE268               482         451      1   1508      1.96         -   59
+  archaea     BE270                 5         750      1   1508    255.59         -   53
+  archaea     BE270               546         537      1   1508      0.79         -   40
+  archaea     BE275                 6        1334      1   1508    533.68         -   55
+  archaea     BE276                 4        1332      1   1508    533.68         -   55
+  archaea     BE277                 4        1332      1   1508    533.68         -   55
+#
+# Post-search info for CM 1: archaea
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  vit  loc      -       -1.00        85      0.4925
+#
+#    run time  (hr:min:sec)
+# -----------
+#    00:00:09
+#
+# Pre-search info for CM 2: bacteria
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  vit  loc      -       -1.00
+#
+# CM: bacteria
+#                                    target coord   query coord                         
+#                          ----------------------  ------------                         
+# model name  target name       start        stop  start   stop    bit sc   E-value  GC%
+# ----------  -----------  ----------  ----------  -----  -----  --------  --------  ---
+  bacteria    BE184                 1        1276      1   1582   1814.43         -   55
+  bacteria    BE186                 1        1274      1   1582   1750.13         -   56
+  bacteria    BE187                 5        1335      1   1582   1871.03         -   56
+  bacteria    BE187               375         357      1   1582     -0.75         -   32
+  bacteria    BE190                 1         749      1   1582   1124.36         -   54
+  bacteria    BE191                 3         750      1   1582   1126.93         -   54
+  bacteria    BE193                 1        1315      1   1582   1776.73         -   55
+  bacteria    BE194                 1        1274      1   1582   1754.95         -   54
+  bacteria    BE195                 1         755      1   1582   1136.59         -   54
+  bacteria    BE196                 5        1343      1   1582   1926.09         -   54
+  bacteria    BE197                 1        1316      1   1582   1762.91         -   55
+  bacteria    BE198                 5        1335      1   1582   1900.76         -   55
+  bacteria    BE198               375         357      1   1582     -0.75         -   32
+  bacteria    BE201                 3        1290      1   1582   1436.67         -   52
+  bacteria    BE201              1106        1057      1   1582     -0.32         -   58
+  bacteria    BE203                 1        1337      1   1582   1915.87         -   55
+  bacteria    BE206                 2        1341      1   1582   1919.61         -   55
+  bacteria    BE207                 2        1339      1   1582   1911.64         -   54
+  bacteria    BE212                 1        1306      1   1582   1840.08         -   58
+  bacteria    BE213                 1        1278      1   1582   1758.14         -   54
+  bacteria    BE215                 1        1276      1   1582   1755.59         -   54
+  bacteria    BE216                 1        1280      1   1582   1729.04         -   54
+  bacteria    BE219                 2        1339      1   1582   1903.62         -   55
+  bacteria    BE220                 2        1339      1   1582   1910.08         -   56
+  bacteria    BE222                 1        1278      1   1582   1728.80         -   54
+  bacteria    BE223                 1        1281      1   1582   1730.99         -   54
+  bacteria    BE224                 1        1316      1   1582   1777.77         -   55
+  bacteria    BE228                 6        1335      1   1582   1846.89         -   56
+  bacteria    BE231                 3        1343      1   1582   1912.31         -   56
+  bacteria    BE232                 2        1342      1   1582   1927.83         -   53
+  bacteria    BE233                 1        1315      1   1582   1785.01         -   54
+  bacteria    BE234                 6        1335      1   1582   1846.89         -   56
+  bacteria    BE235                 1        1280      1   1582   1720.94         -   53
+  bacteria    BE236                 1        1338      1   1582   1910.08         -   56
+  bacteria    BE239                 1        1276      1   1582   1799.20         -   54
+  bacteria    BE240                 1        1318      1   1582   1756.30         -   56
+  bacteria    BE241                 3        1328      1   1582   1903.97         -   54
+  bacteria    BE242                 4        1291      1   1582   1436.67         -   52
+  bacteria    BE242              1107        1058      1   1582     -0.32         -   58
+  bacteria    BE243                 1        1272      1   1582   1845.72         -   55
+  bacteria    BE248                 1        1302      1   1582   1819.26         -   57
+  bacteria    BE249                 1        1276      1   1582   1716.39         -   53
+  bacteria    BE251                 1        1266      1   1582   1825.91         -   55
+  bacteria    BE251               102          78      1   1582      0.65         -   36
+  bacteria    BE254                 1        1274      1   1582   1788.41         -   55
+  bacteria    BE255                 1        1276      1   1582   1792.81         -   55
+  bacteria    BE256                 1        1271      1   1582   1819.42         -   55
+  bacteria    BE257                 1         751      1   1582   1015.30         -   53
+  bacteria    BE258                 1        1267      1   1582   1837.24         -   55
+  bacteria    BE259                 1        1278      1   1582   1716.83         -   52
+  bacteria    BE260                 1        1304      1   1582   1445.45         -   50
+  bacteria    BE261                 1        1306      1   1582   1842.11         -   57
+  bacteria    BE264                 1        1274      1   1582   1782.56         -   55
+  bacteria    BE265                 1        1323      1   1582   1781.23         -   54
+  bacteria    BE268                 1        1280      1   1582   1787.03         -   55
+  bacteria    BE270                 1         750      1   1582    986.61         -   53
+  bacteria    BE275                 6        1335      1   1582   1855.79         -   55
+  bacteria    BE276                 4        1332      1   1582   1855.51         -   55
+  bacteria    BE277                 4        1333      1   1582   1855.79         -   55
+#
+# Post-search info for CM 2: bacteria
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  vit  loc      -       -1.00        59      0.5007
+#
+#    run time  (hr:min:sec)
+# -----------
+#    00:00:09
+#
+# Pre-search info for CM 3: eukarya
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  vit  loc      -       -1.00
+#
+# CM: eukarya
+#                                    target coord   query coord                         
+#                          ----------------------  ------------                         
+# model name  target name       start        stop  start   stop    bit sc   E-value  GC%
+# ----------  -----------  ----------  ----------  -----  -----  --------  --------  ---
+  eukarya     BE184               731         772      1   1881     14.04         -   48
+  eukarya     BE186               736         777      1   1881     14.04         -   48
+  eukarya     BE187               794         835      1   1881     25.08         -   50
+  eukarya     BE190               210         251      1   1881      6.61         -   45
+  eukarya     BE191               206         247      1   1881     26.59         -   57
+  eukarya     BE191               449         436      1   1881     -0.63         -   36
+  eukarya     BE193               779         820      1   1881     19.85         -   55
+  eukarya     BE194              1155        1258      1   1881     14.09         -   57
+  eukarya     BE195               212         253      1   1881     26.59         -   57
+  eukarya     BE195               455         442      1   1881     -0.63         -   36
+  eukarya     BE196               804         845      1   1881     26.59         -   57
+  eukarya     BE196              1045        1032      1   1881     -0.63         -   36
+  eukarya     BE197               779         820      1   1881     19.85         -   55
+  eukarya     BE198               794         835      1   1881     25.08         -   50
+  eukarya     BE201               400         419      1   1881      9.20         -   65
+  eukarya     BE203               795         836      1   1881     26.59         -   57
+  eukarya     BE206               798         839      1   1881     26.59         -   57
+  eukarya     BE207               798         839      1   1881     26.59         -   57
+  eukarya     BE207              1041        1028      1   1881     -0.63         -   36
+  eukarya     BE212               145         193      1   1881     29.36         -   59
+  eukarya     BE213              1157        1260      1   1881     14.09         -   57
+  eukarya     BE215              1156        1259      1   1881     14.09         -   57
+  eukarya     BE216              1156        1259      1   1881     14.09         -   57
+  eukarya     BE219               798         839      1   1881     29.98         -   52
+  eukarya     BE219              1039        1026      1   1881     -0.63         -   36
+  eukarya     BE220               799         840      1   1881     26.59         -   57
+  eukarya     BE220              1042        1029      1   1881     -0.63         -   36
+  eukarya     BE222              1157        1260      1   1881     14.09         -   57
+  eukarya     BE223              1157        1260      1   1881     14.09         -   57
+  eukarya     BE224               780         821      1   1881     19.85         -   55
+  eukarya     BE228               424         443      1   1881      9.20         -   65
+  eukarya     BE231               800         841      1   1881     26.59         -   57
+  eukarya     BE231              1043        1030      1   1881     -0.63         -   36
+  eukarya     BE232               801         842      1   1881     26.59         -   57
+  eukarya     BE232              1042        1029      1   1881     -0.63         -   36
+  eukarya     BE233               782         823      1   1881     19.85         -   55
+  eukarya     BE234               424         443      1   1881      9.20         -   65
+  eukarya     BE235              1157        1260      1   1881     14.09         -   57
+  eukarya     BE236               798         839      1   1881     26.59         -   57
+  eukarya     BE236              1041        1028      1   1881     -0.63         -   36
+  eukarya     BE239               733         774      1   1881     14.04         -   48
+  eukarya     BE240               783         824      1   1881     19.85         -   55
+  eukarya     BE241               418         437      1   1881      9.20         -   65
+  eukarya     BE242               401         420      1   1881      9.20         -   65
+  eukarya     BE243               733         774      1   1881     14.04         -   48
+  eukarya     BE248               140         188      1   1881     18.32         -   53
+  eukarya     BE249              1155        1258      1   1881     14.09         -   57
+  eukarya     BE251               730         771      1   1881     14.04         -   48
+  eukarya     BE254               731         772      1   1881     14.04         -   48
+  eukarya     BE255               734         775      1   1881     14.04         -   48
+  eukarya     BE256               731         772      1   1881     14.04         -   48
+  eukarya     BE257               361         380      1   1881      9.20         -   65
+  eukarya     BE258               729         770      1   1881     14.04         -   48
+  eukarya     BE259              1155        1258      1   1881     14.09         -   57
+  eukarya     BE260               775         816      1   1881     13.71         -   48
+  eukarya     BE261               138         186      1   1881     24.40         -   53
+  eukarya     BE264               736         777      1   1881     14.04         -   48
+  eukarya     BE265               783         824      1   1881     19.85         -   55
+  eukarya     BE268               735         776      1   1881     14.04         -   48
+  eukarya     BE270               364         383      1   1881      9.20         -   65
+  eukarya     BE275               424         443      1   1881      9.20         -   65
+  eukarya     BE276               422         441      1   1881      9.20         -   65
+  eukarya     BE277               422         441      1   1881      9.20         -   65
+#
+# Post-search info for CM 3: eukarya
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  vit  loc      -       -1.00        63      0.0203
+#
+#    run time  (hr:min:sec)
+# -----------
+#    00:00:08

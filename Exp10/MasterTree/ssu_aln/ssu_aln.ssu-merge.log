@@ -1,0 +1,179 @@
+# _ssu-merge :: merge SSU rRNA alignments
+# SSU-ALIGN 0.1.1 (Feb 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# command: _ssu-merge ssu_aln
+# date:    Fri Apr 19 15:42:22 2019
+
+Printing global hask key as read from ssu.pm:
+
+Global hash key: DF_ALIMASK_PFRACT    value: 0.95
+Global hash key: DF_ALIMASK_PTHRESH   value: 0.95
+Global hash key: DF_CMALIGN_OPTS      value:  --no-null3 --sub 
+Global hash key: DF_CMBUILD_GAPTHRESH value: 0.8
+Global hash key: DF_CMSEARCH_ALG_FLAG value:  --viterbi
+Global hash key: DF_CMSEARCH_OPTS     value:  --hmm-cW 1.5 --no-null3 --noalign 
+Global hash key: DF_CMSEARCH_T        value: -1
+Global hash key: DF_CM_FILE           value: /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm
+Global hash key: DF_MASK_FILE         value: /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.mask
+Global hash key: DF_MERGE_INIT_WAIT_SECS value: 3
+Global hash key: DF_MINBIT            value: 50
+Global hash key: DF_MINLEN            value: 1
+Global hash key: DF_MXSIZE            value: 4096
+Global hash key: DF_NO_NAME           value: <NONE>
+Global hash key: DF_TEMPLATE_FILE     value: /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.ps
+Global hash key: VERSION              value: 0.1
+Global hash key: VERSION_PSTR         value: 0p1
+Global hash key: cmalign              value: ssu-cmalign
+Global hash key: cmbuild              value: ssu-cmbuild
+Global hash key: cmsearch             value: ssu-cmsearch
+Global hash key: esl-alimanip         value: ssu-esl-alimanip
+Global hash key: esl-alimask          value: ssu-esl-alimask
+Global hash key: esl-alimerge         value: ssu-esl-alimerge
+Global hash key: esl-alistat          value: ssu-esl-alistat
+Global hash key: esl-reformat         value: ssu-esl-reformat
+Global hash key: esl-seqstat          value: ssu-esl-seqstat
+Global hash key: esl-sfetch           value: ssu-esl-sfetch
+Global hash key: esl-ssdraw           value: ssu-esl-ssdraw
+Global hash key: esl-weight           value: ssu-esl-weight
+Global hash key: ps2pdf               value: ps2pdf
+Global hash key: ssu-align            value: ssu-align
+Global hash key: ssu-merge            value: ssu-merge
+
+Executing:      ssu-esl-alimerge -h > /dev/null  2> ssu_aln/ssutmp0erraa50607
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp0erraa50607) with perl's unlink function ... done.
+
+Executing:      cat ssu_aln/ssu_aln.1/ssu_aln.1.tab ssu_aln/ssu_aln.2/ssu_aln.2.tab ssu_aln/ssu_aln.3/ssu_aln.3.tab > ssu_aln/ssu_aln.tab  2> ssu_aln/ssutmp1erraa50607
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.tab.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp1erraa50607) with perl's unlink function ... done.
+
+Executing:      cat ssu_aln/ssu_aln.1/ssu_aln.1.scores ssu_aln/ssu_aln.2/ssu_aln.2.scores ssu_aln/ssu_aln.3/ssu_aln.3.scores > ssu_aln/ssu_aln.scores  2> ssu_aln/ssutmp2erraa50607
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.scores.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp2erraa50607) with perl's unlink function ... done.
+
+Executing:      cat ssu_aln/ssu_aln.1/ssu_aln.1.ssu-align.log ssu_aln/ssu_aln.2/ssu_aln.2.ssu-align.log ssu_aln/ssu_aln.3/ssu_aln.3.ssu-align.log > ssu_aln/ssu_aln.ssu-align.log  2> ssu_aln/ssutmp3erraa50607
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.ssu-align.log.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp3erraa50607) with perl's unlink function ... done.
+
+Executing:      cat ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.fa ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.fa ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.fa > ssu_aln/ssu_aln.bacteria.fa  2> ssu_aln/ssutmp4erraa50607
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.bacteria.fa.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp4erraa50607) with perl's unlink function ... done.
+
+Executing:      cat ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.hitlist ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.hitlist ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.hitlist > ssu_aln/ssu_aln.bacteria.hitlist  2> ssu_aln/ssutmp5erraa50607
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.bacteria.hitlist.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp5erraa50607) with perl's unlink function ... done.
+
+Executing:      ssu-esl-alimerge --small --outformat pfam --dna --list -v -o ssu_aln/ssu_aln.bacteria.stk ssu_aln/bacteria.merge.list > ssu_aln/ssu_aln.bacteria.alimerge  2> ssu_aln/ssutmp6erraa50607
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.bacteria.alimerge.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp6erraa50607) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/bacteria.merge.list) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.bacteria.alimerge) with perl's unlink function ... done.
+
+Executing:      cat ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.cmalign ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.cmalign ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.cmalign > ssu_aln/ssu_aln.bacteria.cmalign  2> ssu_aln/ssutmp7erraa50607
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.bacteria.cmalign.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp7erraa50607) with perl's unlink function ... done.
+
+Executing:      cat ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.ifile ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.ifile ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.ifile > ssu_aln/ssu_aln.bacteria.ifile  2> ssu_aln/ssutmp8erraa50607
+Returned:       0
+Output (STDOUT) saved in file ssu_aln/ssu_aln.bacteria.ifile.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp8erraa50607) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.1/ssu_aln.1.scores) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.2/ssu_aln.2.scores) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.3/ssu_aln.3.scores) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.1/ssu_aln.1.ssu-align.sum) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.2/ssu_aln.2.ssu-align.sum) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.3/ssu_aln.3.ssu-align.sum) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.1/ssu_aln.1.ssu-align.log) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.2/ssu_aln.2.ssu-align.log) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.3/ssu_aln.3.ssu-align.log) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.1/ssu_aln.1.tab) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.2/ssu_aln.2.tab) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.3/ssu_aln.3.tab) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.cmalign) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.cmalign) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.cmalign) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.fa) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.fa) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.fa) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.hitlist) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.hitlist) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.hitlist) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.stk) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.stk) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.stk) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.1/ssu_aln.1.bacteria.ifile) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.2/ssu_aln.2.bacteria.ifile) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.3/ssu_aln.3.bacteria.ifile) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/IsolateSeqs.fasta.1) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/IsolateSeqs.fasta.2) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/IsolateSeqs.fasta.3) with perl's unlink function ... done.
+
+About to remove presumed empty directory (ssu_aln/ssu_aln.1) with perl's rmdir function ... done.
+
+About to remove presumed empty directory (ssu_aln/ssu_aln.2) with perl's rmdir function ... done.
+
+About to remove presumed empty directory (ssu_aln/ssu_aln.3) with perl's rmdir function ... done.
+
+Fri Apr 19 15:42:22 EDT 2019
+Linux william 4.4.0-97-generic #120-Ubuntu SMP Tue Sep 19 17:28:18 UTC 2017 x86_64 GNU/Linux
+# SSU-ALIGN-SUCCESS

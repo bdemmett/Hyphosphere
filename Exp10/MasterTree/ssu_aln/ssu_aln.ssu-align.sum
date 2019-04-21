@@ -1,0 +1,219 @@
+# _ssu-align :: align SSU rRNA sequences
+# SSU-ALIGN 0.1.1 (Feb 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# command: _ssu-align -b 50 --dna --rfonly ssu_aln/IsolateSeqs.fasta.1 ssu_aln/ssu_aln.1
+# date:    Fri Apr 19 15:40:58 2019
+#
+# Validating input sequence file ... done.
+#
+# Stage 1: Determining SSU start/end positions and best-matching models...
+#
+# output file name            description                                
+# --------------------------  -------------------------------------------
+  ssu_aln.1.tab               locations/scores of hits defined by HMM(s)
+  ssu_aln.1.bacteria.hitlist  list of sequences to align with bacteria CM
+  ssu_aln.1.bacteria.fa            55 sequences to align with bacteria CM
+#
+# Stage 2: Aligning each sequence to its best-matching model...
+#
+# output file name            description
+# --------------------------  ---------------------------------------
+  ssu_aln.1.bacteria.stk      bacteria alignment
+  ssu_aln.1.bacteria.cmalign  bacteria cmalign output
+  ssu_aln.1.bacteria.ifile    bacteria insert info
+  ssu_aln.1.scores            list of CM/HMM scores for each sequence
+#
+# Summary statistics:
+#
+# model or       number  fraction        average   average               
+# category      of seqs  of total         length  coverage    nucleotides
+# ------------  -------  --------  -------------  --------  -------------
+  *input*            55    1.0000        1285.93    1.0000          70726
+#
+  archaea             0    0.0000              -         -              0
+  bacteria           55    1.0000        1284.24    0.9987          70633
+  eukarya             0    0.0000              -         -              0
+#
+  *all-models*       55    1.0000        1284.24    0.9987          70633
+  *no-models*         0    0.0000              -         -              0
+#
+# Speed statistics:
+#
+# stage      num seqs  seq/sec  seq/sec/model    nucleotides    nt/sec
+# ---------  --------  -------  -------------  -------------  --------
+  search           55    1.920          0.640          70726    2469.6
+  alignment        55    1.063          1.063          70633    1364.6
+#
+#
+# List of executed commands saved in:     ssu_aln.1.ssu-align.log.
+# Output printed to the screen saved in:  ssu_aln.1.ssu-align.sum.
+#
+# All output files created in directory ./ssu_aln/ssu_aln.1/
+#
+# CPU time (search):     00:00:28.64  (hh:mm:ss)
+# CPU time (alignment):  00:00:51.76  (hh:mm:ss)
+# CPU time (total):      00:01:20.55  (hh:mm:ss)
+#
+# SSU-ALIGN-SUCCESS
+# _ssu-align :: align SSU rRNA sequences
+# SSU-ALIGN 0.1.1 (Feb 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# command: _ssu-align -b 50 --dna --rfonly ssu_aln/IsolateSeqs.fasta.2 ssu_aln/ssu_aln.2
+# date:    Fri Apr 19 15:40:58 2019
+#
+# Validating input sequence file ... done.
+#
+# Stage 1: Determining SSU start/end positions and best-matching models...
+#
+# output file name            description                                
+# --------------------------  -------------------------------------------
+  ssu_aln.2.tab               locations/scores of hits defined by HMM(s)
+  ssu_aln.2.bacteria.hitlist  list of sequences to align with bacteria CM
+  ssu_aln.2.bacteria.fa            56 sequences to align with bacteria CM
+#
+# Stage 2: Aligning each sequence to its best-matching model...
+#
+# output file name            description
+# --------------------------  ---------------------------------------
+  ssu_aln.2.bacteria.stk      bacteria alignment
+  ssu_aln.2.bacteria.cmalign  bacteria cmalign output
+  ssu_aln.2.bacteria.ifile    bacteria insert info
+  ssu_aln.2.scores            list of CM/HMM scores for each sequence
+#
+# Summary statistics:
+#
+# model or       number  fraction        average   average               
+# category      of seqs  of total         length  coverage    nucleotides
+# ------------  -------  --------  -------------  --------  -------------
+  *input*            56    1.0000        1251.86    1.0000          70104
+#
+  archaea             0    0.0000              -         -              0
+  bacteria           56    1.0000        1250.52    0.9989          70029
+  eukarya             0    0.0000              -         -              0
+#
+  *all-models*       56    1.0000        1250.52    0.9989          70029
+  *no-models*         0    0.0000              -         -              0
+#
+# Speed statistics:
+#
+# stage      num seqs  seq/sec  seq/sec/model    nucleotides    nt/sec
+# ---------  --------  -------  -------------  -------------  --------
+  search           56    1.946          0.649          70104    2436.3
+  alignment        56    1.074          1.074          70029    1343.4
+#
+#
+# List of executed commands saved in:     ssu_aln.2.ssu-align.log.
+# Output printed to the screen saved in:  ssu_aln.2.ssu-align.sum.
+#
+# All output files created in directory ./ssu_aln/ssu_aln.2/
+#
+# CPU time (search):     00:00:28.77  (hh:mm:ss)
+# CPU time (alignment):  00:00:52.13  (hh:mm:ss)
+# CPU time (total):      00:01:21.08  (hh:mm:ss)
+#
+# SSU-ALIGN-SUCCESS
+# _ssu-align :: align SSU rRNA sequences
+# SSU-ALIGN 0.1.1 (Feb 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# command: _ssu-align --merge 3 -b 50 --dna --rfonly ssu_aln/IsolateSeqs.fasta.3 ssu_aln/ssu_aln.3
+# date:    Fri Apr 19 15:40:58 2019
+#
+# Validating input sequence file ... done.
+#
+# Stage 1: Determining SSU start/end positions and best-matching models...
+#
+# output file name            description                                
+# --------------------------  -------------------------------------------
+  ssu_aln.3.tab               locations/scores of hits defined by HMM(s)
+  ssu_aln.3.bacteria.hitlist  list of sequences to align with bacteria CM
+  ssu_aln.3.bacteria.fa            54 sequences to align with bacteria CM
+#
+# Stage 2: Aligning each sequence to its best-matching model...
+#
+# output file name            description
+# --------------------------  ---------------------------------------
+  ssu_aln.3.bacteria.stk      bacteria alignment
+  ssu_aln.3.bacteria.cmalign  bacteria cmalign output
+  ssu_aln.3.bacteria.ifile    bacteria insert info
+  ssu_aln.3.scores            list of CM/HMM scores for each sequence
+#
+# Summary statistics:
+#
+# model or       number  fraction        average   average               
+# category      of seqs  of total         length  coverage    nucleotides
+# ------------  -------  --------  -------------  --------  -------------
+  *input*            54    1.0000        1254.04    1.0000          67718
+#
+  archaea             0    0.0000              -         -              0
+  bacteria           54    1.0000        1252.67    0.9989          67644
+  eukarya             0    0.0000              -         -              0
+#
+  *all-models*       54    1.0000        1252.67    0.9989          67644
+  *no-models*         0    0.0000              -         -              0
+#
+# Speed statistics:
+#
+# stage      num seqs  seq/sec  seq/sec/model    nucleotides    nt/sec
+# ---------  --------  -------  -------------  -------------  --------
+  search           54    1.963          0.654          67718    2462.2
+  alignment        54    1.086          1.086          67644    1360.9
+#
+#
+# List of executed commands saved in:     ssu_aln.3.ssu-align.log.
+# Output printed to the screen saved in:  ssu_aln.3.ssu-align.sum.
+#
+# All output files created in directory ./ssu_aln/ssu_aln.3/
+#
+# CPU time (search):     00:00:27.50  (hh:mm:ss)
+# CPU time (alignment):  00:00:49.71  (hh:mm:ss)
+# CPU time (total):      00:01:17.68  (hh:mm:ss)
+#
+# SSU-ALIGN-SUCCESS
+################################################################################
+#
+# Alignments successfully created.
+#
+# Checking/waiting for other jobs to finish before merging...
+#
+# Job 3 (dir: ssu_aln/ssu_aln.3) completed successfully! 2/3 still incomplete.
+# Job 1 (dir: ssu_aln/ssu_aln.1) completed successfully! 1/3 still incomplete.
+# Job 2 (dir: ssu_aln/ssu_aln.2) completed successfully! 0/3 still incomplete.
+#
+# All 3 jobs successfully completed.
+# About to merge their output:
+#
+# Executing:  ssu-merge ssu_aln
+#
+################################################################################
+#
+#
+# Summary statistics:
+#
+# model or       number  fraction        average   average               
+# category      of seqs  of total         length  coverage    nucleotides
+# ------------  -------  --------  -------------  --------  -------------
+  *input*           165    1.0000        1263.93    1.0000         208548
+#
+  archaea             0    0.0000              -         -              0
+  bacteria          165    1.0000        1262.46    0.9988         208306
+  eukarya             0    0.0000              -         -              0
+#
+  *all-models*      165    1.0000        1262.46    0.9988         208306
+  *no-models*         0    0.0000              -         -              0
+#
+# Speed statistics:
+#
+# stage      num seqs  seq/sec  seq/sec/model    nucleotides    nt/sec
+# ---------  --------  -------  -------------  -------------  --------
+  search          165  165.000         55.000         208548  208548.0
+  alignment       165  165.000        165.000         208306  208306.0
+#
+# Summed ssu-align CPU time (search):     00:00:00.00  (hh:mm:ss)
+# Summed ssu-align CPU time (alignment):  00:00:00.00  (hh:mm:ss)
+# Summed ssu-align CPU time (total):      00:00:00.00  (hh:mm:ss)

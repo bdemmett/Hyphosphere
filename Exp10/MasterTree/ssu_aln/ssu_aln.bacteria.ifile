@@ -1,0 +1,231 @@
+# Insert information file created by cmalign.
+# This file includes 2+<nseq> non-'#' pre-fixed lines per model used for alignment,
+# where <nseq> is the number of sequences in the target file.
+# The first non-'#' prefixed line per model includes 2 tokens, separated by a single space (' '):
+# The first token is the model name and the second is the consensus length of the model (<clen>).
+# The following <nseq> lines include (4+3*<n>) whitespace delimited tokens per line.
+# The format for these <nseq> lines is:
+#   <seqname> <seqlen> <spos> <epos> <c_1> <u_1> <i_1> <c_2> <u_2> <i_2> .... <c_x> <u_x> <i_x> .... <c_n> <u_n> <i_n>
+#   indicating <seqname> has >= 1 inserted residues after <n> different consensus positions,
+#   <seqname> is the name of the sequence
+#   <seqlen>  is the unaligned length of the sequence
+#   <spos>    is the first (5'-most) consensus position filled by a nongap for this sequence (-1 if 0 nongap consensus posns)
+#   <epos>    is the final (3'-most) consensus position filled by a nongap for this sequence (-1 if 0 nongap consensus posns)
+#   <seqlen>  is the unaligned length of the sequence
+#   <c_x> is a consensus position (between 0 and <clen>; if 0: inserts before 1st consensus posn)
+#   <u_x> is the *unaligned* position (b/t 1 and <seqlen>) in <seqname> of the first inserted residue after <c_x>.
+#   <i_x> is the number of inserted residues after position <c_x> for <seqname>.
+# Lines for sequences with 0 inserted residues will include only <seqname> <seqlen> <spos> <epos>.
+# The final non-'#' prefixed line per model includes only '//', indicating the end of info for a model.
+#
+bacteria 1582
+BE26 1335 103 1458  1051 938 1  1060 947 1
+BE27 1338 100 1458  1051 941 1  1060 950 1
+BE28 1338 100 1458  1051 941 1  1060 950 1
+BE29 1322 104 1459  499 377 1  869 744 1  1051 925 1  1060 934 1
+BE30 1322 104 1459  499 377 1  869 744 1  1051 925 1  1060 934 1
+BE31 1292 119 1447  207 90 1  439 308 1  1023 878 1  1028 883 1  1062 915 1  1208 1053 1
+BE32 1296 119 1450  207 90 1  439 308 1  1023 878 1  1028 883 1  1062 915 1  1208 1053 1  1431 1277 1
+BE33 1104 102 1252  126 26 1  130 31 1  231 122 1
+BE34 1288 119 1443  207 90 1  439 308 1  1023 878 1  1028 883 1  1062 915 1  1208 1053 1
+BE35 1063 103 1213
+BE36 1326 111 1458  231 116 1  869 749 1  1028 908 1  1062 940 1
+BE38 1324 102 1457
+BE39 1310 100 1458
+BE40 1319 104 1460  869 744 1  1051 925 1  1060 934 1
+BE41 1294 113 1455  499 356 1  1051 901 1  1060 910 1
+BE42 1329 111 1460  1051 930 1  1060 939 1
+BE43 1342 100 1462  1051 941 1  1060 950 1
+BE44 1328 102 1460  496 377 1
+BE45 1338 100 1458  1051 941 1  1060 950 1
+BE46 1323 103 1457
+BE47 1324 103 1458
+BE48 1326 99 1457
+BE49 1276 115 1464
+BE50 1329 102 1445  126 26 1  158 59 1  225 126 1  233 135 1  1051 949 1  1060 958 1
+BE51 1283 119 1443  439 307 1  499 359 1  1208 1049 1
+BE52 1323 104 1460  869 744 1  1051 925 1  1060 934 1
+BE53 1269 118 1460  1208 1019 1
+BE54 1292 115 1455  499 354 1  1051 899 1  1060 908 1
+BE55 1319 103 1453
+BE56 1322 104 1457
+BE57 1294 119 1449  207 90 1  439 308 1  1023 878 1  1028 883 1  1062 915 1  1208 1053 1
+BE59 1272 117 1458  1028 850 2  1049 873 1  1208 1024 1
+BE60 1318 102 1453  499 379 1  869 746 1  1051 927 1  1060 936 1
+BE61 1324 103 1458
+BE62 1322 104 1457
+BE63 1336 102 1458  1051 939 1  1060 948 1
+BE64 1340 100 1460  1051 941 1  1060 950 1
+BE65 1343 99 1462  1051 942 1  1060 951 1
+BE65B 1341 100 1461  1051 941 1  1060 950 1
+BE66 1337 100 1458  231 126 1  1051 940 1  1060 949 1
+BE68 1292 113 1453  499 356 1  1051 901 1  1060 910 1
+BE69 1315 105 1453  869 743 1  1051 924 1  1060 933 1
+BE70 1272 118 1459  1028 849 2  1049 872 1  1208 1023 1
+BE71 1312 102 1460  231 121 1  1023 885 1
+BE72 1272 114 1458  1028 851 1  1035 859 1  1043 868 1
+BE74 1335 100 1456  231 126 1  1051 940 1  1060 949 1
+BE75 750 700 1461  1051 350 1  1060 359 1
+BE76 750 701 1462  1051 349 1  1060 358 1
+BE79 1336 100 1458
+BE80 1335 100 1456  869 758 1  1028 917 1  1062 949 1  1320 1200 1
+BE81 1335 100 1456  869 758 1  1028 917 1  1062 949 1  1320 1200 1
+BE82 1275 116 1460  1028 851 2  1049 874 1  1208 1025 1
+BE83 1248 117 1460
+BE84 1276 115 1460  1028 852 2  1049 875 1  1208 1026 1
+BE85 1309 100 1458
+//
+# Insert information file created by cmalign.
+# This file includes 2+<nseq> non-'#' pre-fixed lines per model used for alignment,
+# where <nseq> is the number of sequences in the target file.
+# The first non-'#' prefixed line per model includes 2 tokens, separated by a single space (' '):
+# The first token is the model name and the second is the consensus length of the model (<clen>).
+# The following <nseq> lines include (4+3*<n>) whitespace delimited tokens per line.
+# The format for these <nseq> lines is:
+#   <seqname> <seqlen> <spos> <epos> <c_1> <u_1> <i_1> <c_2> <u_2> <i_2> .... <c_x> <u_x> <i_x> .... <c_n> <u_n> <i_n>
+#   indicating <seqname> has >= 1 inserted residues after <n> different consensus positions,
+#   <seqname> is the name of the sequence
+#   <seqlen>  is the unaligned length of the sequence
+#   <spos>    is the first (5'-most) consensus position filled by a nongap for this sequence (-1 if 0 nongap consensus posns)
+#   <epos>    is the final (3'-most) consensus position filled by a nongap for this sequence (-1 if 0 nongap consensus posns)
+#   <seqlen>  is the unaligned length of the sequence
+#   <c_x> is a consensus position (between 0 and <clen>; if 0: inserts before 1st consensus posn)
+#   <u_x> is the *unaligned* position (b/t 1 and <seqlen>) in <seqname> of the first inserted residue after <c_x>.
+#   <i_x> is the number of inserted residues after position <c_x> for <seqname>.
+# Lines for sequences with 0 inserted residues will include only <seqname> <seqlen> <spos> <epos>.
+# The final non-'#' prefixed line per model includes only '//', indicating the end of info for a model.
+#
+bacteria 1582
+BE88 1271 118 1458  1028 849 2  1049 872 1  1208 1023 1
+BE91 1245 119 1459
+BE92 1313 110 1460  1051 919 1  1060 928 1
+BE93 1276 115 1460  1028 853 2  1049 876 1
+BE94 1339 102 1461  1051 939 1  1060 948 1
+BE95 1268 118 1459  1208 1019 1
+BE96 1324 103 1458
+BE97 1333 100 1454  1051 940 1  1060 949 1
+BE98 742 120 922
+BE100 1275 114 1462
+BE101 1313 110 1460  1051 919 1  1060 928 1
+BE102 1271 117 1457  1028 850 2  1049 873 1  1208 1024 1
+BE103 1326 99 1457
+BE104 1334 102 1456  869 756 1  1028 915 1  1062 947 1  1320 1199 1
+BE105 1325 103 1460  869 745 1  1051 926 1  1060 935 1  1431 1296 1
+BE107 1330 99 1458
+BE108 1277 114 1460  1028 854 2  1049 877 1
+BE109 1273 120 1462  1028 847 2  1049 870 1  1208 1021 1
+BE110 1273 118 1460  1028 849 2  1049 872 1  1208 1023 1
+BE112 1244 119 1458
+BE113 1280 115 1464  1028 853 2  1049 876 1
+BE114 1322 105 1460  869 743 1  1051 924 1  1060 933 1
+BE115 1317 105 1459  869 743 1  1051 924 1  1060 933 1
+BE116 1326 103 1460  225 106 1  233 115 1  869 747 1  1051 928 1  1060 937 1
+BE117 1316 107 1460  1051 922 1  1060 931 1
+BE118 1283 119 1443  439 307 1  499 359 1  1208 1049 1
+BE120 1248 117 1460
+BE121 1289 113 1443  439 313 1  499 365 1  1208 1055 1
+BE122 1276 114 1459  1028 854 2  1049 877 1
+BE123 1279 114 1464  1028 854 1  1049 876 1
+BE124 1301 108 1450  439 318 1  499 370 2  1023 887 1  1208 1060 1
+BE125 1275 114 1458  1028 853 2  1049 876 1  1208 1027 1
+BE126 1274 113 1458  1028 855 1  1032 859 1  1046 874 1  1049 877 1
+BE127 1325 103 1460  120 19 1  869 746 1  1051 927 1  1060 936 1
+BE128 1269 120 1460  1031 851 1  1032 852 1  1046 867 1  1049 870 1
+BE153 1276 115 1460  1028 852 2  1049 875 1  1208 1026 1
+BE154 1310 104 1461  714 575 1
+BE156 1303 108 1459  1023 878 1
+BE157 1277 116 1462  1028 851 2  1049 874 1  1208 1025 1
+BE159 1248 117 1459  1445 1234 1
+BE163 588 864 1462  1023 160 1
+BE164 1307 105 1460  1023 881 1
+BE166 1274 115 1458  1028 852 2  1049 875 1  1208 1026 1
+BE167 1309 106 1460  231 117 2  1023 882 1
+BE168 1276 115 1460  1028 852 2  1049 875 1  1208 1026 1
+BE170 1302 108 1458  1023 878 1
+BE171 1317 99 1458  227 120 1  231 125 1
+BE172 1274 117 1460  1028 850 2  1049 873 1  1208 1024 1
+BE173 1332 99 1459  1445 1318 1
+BE177 1271 113 1453  1028 855 2  1049 878 1
+BE178 1299 108 1455  1023 878 1
+BE179 750 701 1462  1051 349 1  1060 358 1
+BE180 1309 103 1459
+BE181 1280 113 1462  1028 855 2  1049 878 1
+BE182 749 704 1464  1051 346 1  1060 355 1
+BE183 1246 116 1457
+//
+# Insert information file created by cmalign.
+# This file includes 2+<nseq> non-'#' pre-fixed lines per model used for alignment,
+# where <nseq> is the number of sequences in the target file.
+# The first non-'#' prefixed line per model includes 2 tokens, separated by a single space (' '):
+# The first token is the model name and the second is the consensus length of the model (<clen>).
+# The following <nseq> lines include (4+3*<n>) whitespace delimited tokens per line.
+# The format for these <nseq> lines is:
+#   <seqname> <seqlen> <spos> <epos> <c_1> <u_1> <i_1> <c_2> <u_2> <i_2> .... <c_x> <u_x> <i_x> .... <c_n> <u_n> <i_n>
+#   indicating <seqname> has >= 1 inserted residues after <n> different consensus positions,
+#   <seqname> is the name of the sequence
+#   <seqlen>  is the unaligned length of the sequence
+#   <spos>    is the first (5'-most) consensus position filled by a nongap for this sequence (-1 if 0 nongap consensus posns)
+#   <epos>    is the final (3'-most) consensus position filled by a nongap for this sequence (-1 if 0 nongap consensus posns)
+#   <seqlen>  is the unaligned length of the sequence
+#   <c_x> is a consensus position (between 0 and <clen>; if 0: inserts before 1st consensus posn)
+#   <u_x> is the *unaligned* position (b/t 1 and <seqlen>) in <seqname> of the first inserted residue after <c_x>.
+#   <i_x> is the number of inserted residues after position <c_x> for <seqname>.
+# Lines for sequences with 0 inserted residues will include only <seqname> <seqlen> <spos> <epos>.
+# The final non-'#' prefixed line per model includes only '//', indicating the end of info for a model.
+#
+bacteria 1582
+BE184 1276 117 1462  1028 850 2  1049 873 1  1208 1024 1
+BE186 1274 112 1459  1208 1025 1
+BE187 1331 99 1459
+BE190 749 697 1458
+BE191 748 704 1463  1051 346 1  1060 355 1
+BE193 1315 108 1460  1051 921 1  1060 930 1
+BE194 1274 113 1458  1028 855 1  1032 859 1  1046 874 1  1049 877 1
+BE195 755 696 1462  1051 354 1  1060 363 1
+BE196 1339 100 1460
+BE197 1316 108 1460  1051 921 1  1060 930 1  1445 1301 1
+BE198 1331 99 1459
+BE201 1288 119 1443  207 90 1  439 308 1  1023 878 1  1028 883 1  1062 915 1  1208 1053 1
+BE203 1337 104 1461  231 122 2  1051 937 1  1060 946 1
+BE206 1340 102 1462  231 124 2  1051 939 1  1060 948 1
+BE207 1338 102 1460  1051 939 1  1060 948 1
+BE212 1306 100 1455
+BE213 1278 113 1460  1028 855 2  1049 878 1
+BE215 1276 114 1459  1028 854 2  1049 877 1
+BE216 1280 114 1463  1028 854 2  1049 877 1
+BE219 1338 102 1462
+BE220 1338 100 1459  1051 940 1  1060 949 1
+BE222 1278 113 1460  1028 855 2  1049 878 1
+BE223 1281 113 1463  1028 855 2  1049 878 1
+BE224 1316 107 1460  1051 922 1  1060 931 1
+BE228 1330 99 1461
+BE231 1341 100 1462  1051 940 1  1060 949 1
+BE232 1341 100 1462
+BE233 1315 105 1453  499 376 1  869 743 1  1051 924 1  1060 933 1
+BE234 1330 99 1461
+BE235 1280 113 1462  1028 855 2  1049 878 1
+BE236 1338 100 1459  1051 940 1  1060 949 1
+BE239 1276 115 1460  1028 852 2  1049 875 1  1208 1026 1
+BE240 1318 104 1459  869 744 1  1051 925 1  1060 934 1
+BE241 1326 102 1459
+BE242 1288 119 1443  207 90 1  439 308 1  1023 878 1  1028 883 1  1062 915 1  1208 1053 1
+BE243 1272 115 1460  1208 1022 1
+BE248 1302 105 1458  1023 880 1
+BE249 1276 115 1460  1028 853 2  1049 876 1
+BE251 1266 118 1457  1208 1019 1
+BE254 1274 117 1463
+BE255 1276 114 1462
+BE256 1271 117 1457  1028 850 2  1049 873 1  1208 1024 1
+BE257 751 118 930
+BE258 1267 119 1459  1208 1018 1
+BE259 1278 115 1462  1028 853 2  1049 876 1
+BE260 1304 106 1451  439 320 1  1023 889 1  1208 1062 1
+BE261 1306 108 1460  231 115 1  1023 879 1
+BE264 1274 112 1458
+BE265 1323 104 1460  869 744 1  1051 925 1  1060 934 1
+BE268 1280 113 1462  1028 854 2  1049 877 1  1208 1028 1
+BE270 750 115 925
+BE275 1330 99 1461
+BE276 1329 99 1460
+BE277 1330 99 1461
+//

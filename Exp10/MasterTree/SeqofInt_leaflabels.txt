@@ -1,0 +1,667 @@
+ASV	Taxonomy
+ASV2719	Proteobacteria Alphaproteobacteria Rhizobiaceae
+BE42	
+ASV2717	Armatimonadetes Fimbriimonadia Fimbriimonadaceae
+BE41	
+BE47	
+ASV2481	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV3270	Proteobacteria Alphaproteobacteria Rhizobiaceae
+ASV336	Actinobacteria Thermoleophilia 67-14
+ASV335	Proteobacteria Deltaproteobacteria Nannocystaceae
+ASV332	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV5417	Proteobacteria Alphaproteobacteria Beijerinckiaceae
+ASV1404	Proteobacteria Alphaproteobacteria Dongiaceae
+ASV237	Acidobacteria Blastocatellia_(Subgroup_4) Pyrinomonadaceae
+ASV236	Proteobacteria Alphaproteobacteria Beijerinckiaceae
+ASV234	Actinobacteria Actinobacteria Streptomycetaceae
+ASV233	Proteobacteria Alphaproteobacteria Rhizobiaceae
+ASV231	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV1019	Actinobacteria Actinobacteria Streptomycetaceae
+ASV480	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV1390	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+BE216	
+ASV481	Proteobacteria Alphaproteobacteria Rhizobiaceae
+ASV2806	Acidobacteria Thermoanaerobaculia Thermoanaerobaculaceae
+ASV1398	Acidobacteria Thermoanaerobaculia Thermoanaerobaculaceae
+ASV893	Proteobacteria Alphaproteobacteria Xanthobacteraceae
+ASV891	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV897	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV2621	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV899	Bacteroidetes Bacteroidia Hymenobacteraceae
+ASV5115	Proteobacteria Gammaproteobacteria Moraxellaceae
+BE178	
+BE179	
+ASV1271	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+BE170	
+BE171	
+BE172	
+BE173	
+ASV4705	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV808	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV499	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+ASV807	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+ASV152	Bacteroidetes Bacteroidia Saprospiraceae
+ASV153	Proteobacteria Gammaproteobacteria Unknown_Family
+ASV150	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+BE195	
+BE193	
+BE190	
+ASV1975	Bacteroidetes Bacteroidia Microscillaceae
+BE61	
+BE60	
+BE63	
+ASV159	Proteobacteria Alphaproteobacteria Caulobacteraceae
+BE65	
+BE64	
+BE198	
+BE66	
+ASV792	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV2028	Proteobacteria Gammaproteobacteria Xanthomonadaceae
+ASV656	Actinobacteria Actinobacteria Intrasporangiaceae
+ASV650	Verrucomicrobia Verrucomicrobiae Chthoniobacteraceae
+ASV60	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV147	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV5271	Firmicutes Bacilli Paenibacillaceae
+BE109	
+BE108	
+BE105	
+BE104	
+BE107	
+BE101	
+BE100	
+BE103	
+BE102	
+BE277	
+ASV522	Actinobacteria Actinobacteria Nocardiaceae
+BE276	
+ASV478	Bacteroidetes Bacteroidia AKYH767
+ASV573	Proteobacteria Deltaproteobacteria Desulfarculaceae
+ASV575	Chloroflexi Anaerolineae Anaerolineaceae
+ASV577	Acidobacteria Acidobacteriia Solibacteraceae_(Subgroup_3)
+ASV471	Proteobacteria Alphaproteobacteria Xanthobacteraceae
+ASV470	Verrucomicrobia Verrucomicrobiae Chthoniobacteraceae
+ASV473	Bacteroidetes Bacteroidia Cytophagaceae
+ASV1756	Chloroflexi Anaerolineae Caldilineaceae
+ASV477	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV7471	Firmicutes Bacilli Paenibacillaceae
+ASV1437	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+BE270	
+ASV266	Actinobacteria Actinobacteria Nocardioidaceae
+BE206	
+BE207	
+ASV977	Chloroflexi Chloroflexia Herpetosiphonaceae
+ASV971	Acidobacteria Thermoanaerobaculia Thermoanaerobaculaceae
+BE201	
+ASV5578	Actinobacteria Actinobacteria Nocardiaceae
+BE223	
+ASV809	Proteobacteria Deltaproteobacteria BIrii41
+ASV1412	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+ASV270	Actinobacteria Actinobacteria Nocardiaceae
+ASV276	Bacteroidetes Bacteroidia Microscillaceae
+ASV3130	Dependentiae Babeliae Babeliaceae
+ASV278	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+ASV3134	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV1356	Proteobacteria Alphaproteobacteria Rhizobiaceae
+ASV1473	Proteobacteria Gammaproteobacteria Rhodanobacteraceae
+ASV1354	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+ASV663	Actinobacteria Actinobacteria Micromonosporaceae
+BE83	
+BE82	
+BE81	
+ASV1018	Proteobacteria Deltaproteobacteria Sandaracinaceae
+ASV1723	Planctomycetes Phycisphaerae WD2101_soil_group
+ASV1359	Actinobacteria Actinobacteria Intrasporangiaceae
+BE196	
+ASV1681	Proteobacteria Gammaproteobacteria Rhodanobacteraceae
+ASV1683	Actinobacteria Thermoleophilia 67-14
+ASV1686	Acidobacteria Acidobacteriia Solibacteraceae_(Subgroup_3)
+BE94	
+ASV2669	Proteobacteria Alphaproteobacteria Rhizobiaceae
+BE38	
+ASV3343	Proteobacteria Deltaproteobacteria Polyangiaceae
+ASV309	Latescibacteria Latescibacteria Latescibacteraceae
+ASV1128	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+ASV2324	Chloroflexi Chloroflexia Herpetosiphonaceae
+ASV1121	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV1120	Bacteroidetes Bacteroidia Microscillaceae
+ASV1122	Actinobacteria Actinobacteria Intrasporangiaceae
+ASV1125	Proteobacteria Deltaproteobacteria BIrii41
+ASV1124	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+ASV2066	Proteobacteria Gammaproteobacteria Pseudomonadaceae
+ASV615	Planctomycetes Planctomycetacia Gimesiaceae
+ASV617	Proteobacteria Alphaproteobacteria Beijerinckiaceae
+ASV758	Chloroflexi Anaerolineae Anaerolineaceae
+ASV2108	Bacteroidetes Bacteroidia Chitinophagaceae
+ASV2109	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV756	Planctomycetes Phycisphaerae WD2101_soil_group
+ASV2101	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV1547	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV1542	Verrucomicrobia Verrucomicrobiae Chthoniobacteraceae
+ASV534	Verrucomicrobia Verrucomicrobiae Chthoniobacteraceae
+BE51	
+BE52	
+BE53	
+ASV530	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV531	Acidobacteria Acidobacteriia Solibacteraceae_(Subgroup_3)
+BE56	
+BE57	
+ASV927	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+BE59	
+ASV539	Proteobacteria Gammaproteobacteria Unknown_Family
+ASV109	Acidobacteria Blastocatellia_(Subgroup_4) Pyrinomonadaceae
+ASV104	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV107	Chloroflexi Chloroflexia JG30-KF-CM45
+ASV1828	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV100	Proteobacteria Alphaproteobacteria Xanthobacteraceae
+ASV193	Firmicutes Bacilli Bacillaceae
+ASV47	Proteobacteria Deltaproteobacteria BIrii41
+ASV46	Proteobacteria Gammaproteobacteria Unknown_Family
+ASV45	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV44	Planctomycetes Planctomycetacia Rubinisphaeraceae
+ASV43	Proteobacteria Alphaproteobacteria Rhizobiaceae
+ASV42	Proteobacteria Alphaproteobacteria Xanthobacteraceae
+ASV41	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV4121	Bacteroidetes Bacteroidia Microscillaceae
+ASV48	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV581	Planctomycetes Planctomycetacia Gemmataceae
+BE248	
+BE249	
+ASV585	Proteobacteria Deltaproteobacteria 0319-6G20
+ASV584	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV587	Proteobacteria Deltaproteobacteria Desulfarculaceae
+ASV589	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV588	Acidobacteria Blastocatellia_(Subgroup_4) Blastocatellaceae
+BE240	
+BE241	
+ASV4308	Firmicutes Bacilli Bacillaceae
+ASV2204	Proteobacteria Gammaproteobacteria Xanthomonadaceae
+ASV1489	Chloroflexi Anaerolineae Anaerolineaceae
+ASV405	Firmicutes Bacilli Paenibacillaceae
+ASV1779	Planctomycetes Phycisphaerae WD2101_soil_group
+ASV6114	Proteobacteria Gammaproteobacteria Cellvibrionaceae
+ASV1319	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV1313	Actinobacteria Actinobacteria Streptomycetaceae
+ASV1311	Planctomycetes Phycisphaerae WD2101_soil_group
+ASV1316	Proteobacteria Alphaproteobacteria A0839
+ASV2499	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV3145	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV2490	Proteobacteria Gammaproteobacteria Rhodanobacteraceae
+ASV1006	Verrucomicrobia Verrucomicrobiae Chthoniobacteraceae
+ASV321	Firmicutes Bacilli Bacillaceae
+ASV323	Bacteroidetes Bacteroidia Chitinophagaceae
+ASV1915	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV3592	Proteobacteria Alphaproteobacteria Rhizobiaceae
+ASV1161	Actinobacteria Actinobacteria Nakamurellaceae
+ASV1160	Gemmatimonadetes Longimicrobia Longimicrobiaceae
+ASV2400	Bacteroidetes Bacteroidia Cytophagaceae
+ASV1369	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV2409	Actinobacteria Actinobacteria Micromonosporaceae
+ASV3819	Verrucomicrobia Verrucomicrobiae Chthoniobacteraceae
+ASV1360	Proteobacteria Deltaproteobacteria BIrii41
+ASV1186	Actinobacteria Thermoleophilia Gaiellaceae
+ASV718	Chloroflexi Chloroflexia Herpetosiphonaceae
+ASV1180	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV568	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+ASV860	Entotheonellaeota Entotheonellia Entotheonellaceae
+ASV3316	Proteobacteria Alphaproteobacteria Devosiaceae
+ASV2222	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+BE177	
+ASV2225	Bacteroidetes Bacteroidia Microscillaceae
+BE55	
+ASV1260	Proteobacteria Gammaproteobacteria Xanthomonadaceae
+ASV1267	Bacteroidetes Bacteroidia Microscillaceae
+ASV1265	Verrucomicrobia Verrucomicrobiae Chthoniobacteraceae
+ASV1461	Proteobacteria Deltaproteobacteria Sandaracinaceae
+ASV1462	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+ASV812	Proteobacteria Alphaproteobacteria Beijerinckiaceae
+ASV811	Planctomycetes Phycisphaerae Phycisphaeraceae
+ASV815	Proteobacteria Gammaproteobacteria SC-I-84
+ASV814	Planctomycetes Phycisphaerae Phycisphaeraceae
+ASV141	Chloroflexi Chloroflexia JG30-KF-CM45
+ASV140	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV143	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV142	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+ASV144	Bacteroidetes Bacteroidia Chitinophagaceae
+ASV1989	Chloroflexi Chloroflexia Herpetosiphonaceae
+ASV146	Proteobacteria Gammaproteobacteria Burkholderiaceae
+BE54	
+BE50	
+ASV198	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+ASV660	Proteobacteria Gammaproteobacteria Cellvibrionaceae
+ASV788	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV665	Firmicutes Bacilli Planococcaceae
+ASV2031	Bacteroidetes Bacteroidia Chitinophagaceae
+ASV89	Verrucomicrobia Verrucomicrobiae Xiphinematobacteraceae
+ASV4604	Proteobacteria Gammaproteobacteria Xanthomonadaceae
+ASV83	Proteobacteria Alphaproteobacteria Xanthobacteraceae
+ASV82	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV81	Bacteroidetes Bacteroidia Spirosomaceae
+ASV80	Proteobacteria Gammaproteobacteria SC-I-84
+ASV86	Proteobacteria Alphaproteobacteria Caulobacteraceae
+ASV85	Proteobacteria Deltaproteobacteria Haliangiaceae
+BE118	
+BE116	
+BE117	
+BE114	
+BE115	
+BE112	
+BE113	
+ASV1219	Proteobacteria Gammaproteobacteria A21b
+ASV3659	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV914	Acidobacteria Acidobacteriia Solibacteraceae_(Subgroup_3)
+ASV442	Verrucomicrobia Verrucomicrobiae Chthoniobacteraceae
+BE68	
+BE69	
+ASV448	Actinobacteria Actinobacteria Frankiaceae
+BE194	
+ASV918	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV919	Acidobacteria Blastocatellia_(Subgroup_4) Blastocatellaceae
+ASV1601	Bacteroidetes Bacteroidia Flavobacteriaceae
+ASV151	Proteobacteria Gammaproteobacteria Xanthomonadaceae
+ASV1607	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV563	Proteobacteria Deltaproteobacteria Myxococcaceae
+BE232	
+ASV101	Proteobacteria Deltaproteobacteria 0319-6G20
+BE191	
+ASV3528	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+BE233	
+ASV4509	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+BE231	
+ASV18	Proteobacteria Alphaproteobacteria Xanthobacteraceae
+ASV19	Actinobacteria Actinobacteria Micrococcaceae
+BE235	
+BE234	
+ASV14	Bacteroidetes Bacteroidia Flavobacteriaceae
+ASV15	Proteobacteria Gammaproteobacteria Xanthomonadaceae
+ASV16	Planctomycetes Planctomycetacia Pirellulaceae
+ASV17	Proteobacteria Deltaproteobacteria Sandaracinaceae
+ASV11	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV12	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV13	Proteobacteria Gammaproteobacteria Burkholderiaceae
+BE62	
+ASV2983	Bacteroidetes Bacteroidia Microscillaceae
+ASV286	Planctomycetes Planctomycetacia Pirellulaceae
+ASV1147	Proteobacteria Deltaproteobacteria Archangiaceae
+ASV285	Actinobacteria Thermoleophilia Gaiellaceae
+BE239	
+ASV281	Bacteroidetes Bacteroidia Chitinophagaceae
+ASV368	Fibrobacteres Fibrobacteria Fibrobacteraceae
+ASV2853	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV361	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV360	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV227	Chloroflexi Chloroflexia Herpetosiphonaceae
+ASV1731	Proteobacteria Gammaproteobacteria Moraxellaceae
+ASV366	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV2522	Proteobacteria Gammaproteobacteria Rhodanobacteraceae
+ASV2679	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV600	Actinobacteria Actinobacteria Cellulomonadaceae
+ASV3215	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+ASV654	Actinobacteria Actinobacteria Micrococcaceae
+BE110	
+ASV217	Actinobacteria Actinobacteria Microbacteriaceae
+ASV216	Actinobacteria Actinobacteria Intrasporangiaceae
+ASV1130	Bacteroidetes Bacteroidia env.OPS_17
+ASV219	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV1422	Fibrobacteres Fibrobacteria Fibrobacteraceae
+ASV1030	Proteobacteria Alphaproteobacteria Caulobacteraceae
+ASV742	Proteobacteria Deltaproteobacteria Desulfarculaceae
+ASV624	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV622	Proteobacteria Gammaproteobacteria SC-I-84
+ASV623	Verrucomicrobia Verrucomicrobiae Opitutaceae
+BE242	
+BE243	
+ASV2175	Actinobacteria Actinobacteria Thermomonosporaceae
+BE65B	
+BE153	
+BE156	
+BE157	
+BE154	
+BE159	
+BE92	
+ASV820	Spirochaetes Leptospirae Leptospiraceae
+ASV1173	Proteobacteria Gammaproteobacteria Xanthomonadaceae
+ASV829	Bacteroidetes Ignavibacteria BSV26
+ASV1558	Chloroflexi Chloroflexia Herpetosiphonaceae
+BE43	
+ASV489	Proteobacteria Deltaproteobacteria Sandaracinaceae
+ASV958	Proteobacteria Gammaproteobacteria Burkholderiaceae
+BE40	
+ASV527	Planctomycetes Planctomycetacia Gemmataceae
+BE46	
+BE45	
+BE44	
+ASV952	Acidobacteria Subgroup_6 Unknown_Family
+BE228	
+BE49	
+BE48	
+ASV484	Proteobacteria Gammaproteobacteria Unknown_Family
+ASV957	Bacteroidetes Ignavibacteria BSV26
+ASV254	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV1811	Actinobacteria Actinobacteria Micrococcaceae
+ASV139	Nitrospirae Nitrospira Nitrospiraceae
+ASV134	Planctomycetes Phycisphaerae WD2101_soil_group
+ASV136	Proteobacteria Alphaproteobacteria Xanthobacteraceae
+ASV50	Bacteroidetes Bacteroidia env.OPS_17
+ASV51	Actinobacteria Thermoleophilia Gaiellaceae
+BE275	
+ASV54	Nitrospirae Nitrospira Nitrospiraceae
+ASV56	Bacteroidetes Bacteroidia Microscillaceae
+ASV57	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+ASV58	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV59	Proteobacteria Alphaproteobacteria Xanthobacteraceae
+ASV4094	Bacteroidetes Bacteroidia Microscillaceae
+ASV283	Firmicutes Bacilli Bacillaceae
+ASV738	Chloroflexi Chloroflexia Roseiflexaceae
+ASV1350	Proteobacteria Gammaproteobacteria Pseudomonadaceae
+ASV554	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV553	Bacteroidetes Bacteroidia Saprospiraceae
+ASV550	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV1778	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV416	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV415	Chloroflexi Anaerolineae Anaerolineaceae
+ASV414	Proteobacteria Gammaproteobacteria Rhodanobacteraceae
+ASV3899	Actinobacteria Actinobacteria Promicromonosporaceae
+ASV26	Proteobacteria Alphaproteobacteria Devosiaceae
+ASV21	Proteobacteria Deltaproteobacteria Sandaracinaceae
+ASV20	Fibrobacteres Fibrobacteria Fibrobacteraceae
+ASV23	Proteobacteria Alphaproteobacteria Caulobacteraceae
+ASV22	Nitrospirae Nitrospira Nitrospiraceae
+ASV28	Fibrobacteres Fibrobacteria Fibrobacteraceae
+ASV3255	Chloroflexi Chloroflexia Herpetosiphonaceae
+BE224	
+ASV362	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV2303	Proteobacteria Deltaproteobacteria 0319-6G20
+ASV310	Planctomycetes Phycisphaerae WD2101_soil_group
+ASV1192	Proteobacteria Gammaproteobacteria TRA3-20
+ASV316	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV318	Proteobacteria Gammaproteobacteria A21b
+ASV250	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV1177	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV1174	Acidobacteria Thermoanaerobaculia Thermoanaerobaculaceae
+ASV1378	Actinobacteria Thermoleophilia 67-14
+ASV1379	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV1372	Chloroflexi Anaerolineae A4b
+ASV1373	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV1194	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+ASV1195	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV879	Firmicutes Bacilli Streptococcaceae
+ASV2607	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+ASV1193	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+ASV702	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV877	Proteobacteria Gammaproteobacteria Rhodanobacteraceae
+ASV700	Proteobacteria Alphaproteobacteria Dongiaceae
+ASV707	Acidobacteria Acidobacteriia Solibacteraceae_(Subgroup_3)
+ASV704	Proteobacteria Gammaproteobacteria Xanthomonadaceae
+ASV1904	Bacteroidetes Bacteroidia Microscillaceae
+ASV1109	Proteobacteria Gammaproteobacteria Acidiferrobacteraceae
+ASV1511	Proteobacteria Gammaproteobacteria Acidiferrobacteraceae
+ASV1101	Planctomycetes Planctomycetacia Gemmataceae
+ASV675	Nitrospirae Nitrospira Nitrospiraceae
+ASV178	Spirochaetes Leptospirae Leptospiraceae
+ASV174	Proteobacteria Gammaproteobacteria TRA3-20
+ASV171	Proteobacteria Gammaproteobacteria Pseudomonadaceae
+ASV173	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+ASV96	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+ASV97	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+ASV90	Proteobacteria Alphaproteobacteria Rhizobiaceae
+ASV91	Proteobacteria Gammaproteobacteria Pseudomonadaceae
+ASV778	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV2040	Chloroflexi Chloroflexia Herpetosiphonaceae
+ASV772	Proteobacteria Alphaproteobacteria Xanthobacteraceae
+ASV773	Chloroflexi Chloroflexia Herpetosiphonaceae
+ASV1248	Verrucomicrobia Verrucomicrobiae Chthoniobacteraceae
+ASV115	Proteobacteria Alphaproteobacteria Hyphomicrobiaceae
+BE128	
+BE222	
+BE123	
+BE122	
+BE121	
+BE120	
+BE127	
+BE126	
+BE125	
+BE124	
+ASV453	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV452	Proteobacteria Gammaproteobacteria Enterobacteriaceae
+ASV903	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+ASV459	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV458	Proteobacteria Deltaproteobacteria Sandaracinaceae
+BE28	
+ASV1923	Verrucomicrobia Verrucomicrobiae Chthoniobacteraceae
+BE39	
+ASV1568	Acidobacteria Acidobacteriia Solibacteraceae_(Subgroup_3)
+BE32	
+BE33	
+BE30	
+BE31	
+BE36	
+ASV517	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+BE34	
+BE35	
+ASV686	Actinobacteria Actinobacteria Kineosporiaceae
+ASV687	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV685	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV68	Actinobacteria Actinobacteria Streptomycetaceae
+ASV3981	Bacteroidetes Bacteroidia Microscillaceae
+ASV61	Actinobacteria Actinobacteria Mycobacteriaceae
+ASV997	Actinobacteria Actinobacteria Thermomonosporaceae
+BE220	
+ASV64	Proteobacteria Deltaproteobacteria BIrii41
+ASV990	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+ASV66	Fibrobacteres Fibrobacteria Fibrobacteraceae
+BE187	
+ASV299	Nitrospirae Nitrospira Nitrospiraceae
+ASV420	Firmicutes Bacilli Planococcaceae
+ASV421	Proteobacteria Gammaproteobacteria Xanthomonadaceae
+BE181	
+ASV296	Firmicutes Bacilli Staphylococcaceae
+ASV291	Verrucomicrobia Verrucomicrobiae Chthoniobacteraceae
+ASV293	Proteobacteria Deltaproteobacteria 0319-6G20
+BE180	
+ASV196	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV1331	Proteobacteria Alphaproteobacteria Caulobacteraceae
+ASV195	Proteobacteria Deltaproteobacteria bacteriap25
+ASV1334	Proteobacteria Gammaproteobacteria Xanthomonadaceae
+ASV1335	Chloroflexi Anaerolineae Anaerolineaceae
+ASV190	Proteobacteria Gammaproteobacteria Steroidobacteraceae
+ASV1337	Acidobacteria Blastocatellia_(Subgroup_4) Blastocatellaceae
+ASV2865	Proteobacteria Gammaproteobacteria Burkholderiaceae
+BE182	
+ASV2908	Fibrobacteres Fibrobacteria Fibrobacteraceae
+ASV199	Proteobacteria Alphaproteobacteria Reyranellaceae
+ASV3023	Bacteroidetes Bacteroidia env.OPS_17
+ASV3021	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV6133	Chloroflexi Chloroflexia Herpetosiphonaceae
+ASV1931	Bacteroidetes Bacteroidia Chitinophagaceae
+BE203	
+ASV2733	Proteobacteria Gammaproteobacteria Halomonadaceae
+ASV2767	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV648	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+ASV2888	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV3162	Proteobacteria Deltaproteobacteria Polyangiaceae
+ASV1106	Proteobacteria Gammaproteobacteria Pseudomonadaceae
+BE71	
+ASV220	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+ASV1414	Bacteroidetes Bacteroidia Flavobacteriaceae
+ASV222	Proteobacteria Deltaproteobacteria Sandaracinaceae
+ASV224	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV1413	Acidobacteria Blastocatellia_(Subgroup_4) Pyrinomonadaceae
+ASV3140	Proteobacteria Gammaproteobacteria Acidiferrobacteraceae
+ASV228	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV229	Proteobacteria Deltaproteobacteria bacteriap25
+ASV1384	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV1382	Proteobacteria Deltaproteobacteria BIrii41
+ASV1792	Bacteroidetes Bacteroidia AKYH767
+ASV733	Acidobacteria Thermoanaerobaculia Thermoanaerobaculaceae
+ASV880	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV737	Proteobacteria Gammaproteobacteria Rhodanobacteraceae
+ASV631	Acidobacteria Acidobacteriia Solibacteraceae_(Subgroup_3)
+ASV888	Bacteroidetes Bacteroidia Cytophagaceae
+ASV1857	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV5390	Bacteroidetes Bacteroidia Microscillaceae
+ASV673	Acidobacteria Blastocatellia_(Subgroup_4) Pyrinomonadaceae
+BE168	
+BE167	
+BE166	
+BE164	
+BE163	
+ASV4861	Actinobacteria Actinobacteria Microbacteriaceae
+ASV831	Proteobacteria Gammaproteobacteria Steroidobacteraceae
+ASV2644	Proteobacteria Gammaproteobacteria Acidiferrobacteraceae
+ASV79	Verrucomicrobia Verrucomicrobiae Chthoniobacteraceae
+ASV835	Acidobacteria Blastocatellia_(Subgroup_4) Blastocatellaceae
+ASV1240	Proteobacteria Gammaproteobacteria Unknown_Family
+ASV838	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+ASV1243	Actinobacteria Thermoleophilia 67-14
+BE184	
+ASV125	Nitrospirae Nitrospira Nitrospiraceae
+BE186	
+ASV123	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV122	Proteobacteria Gammaproteobacteria Xanthomonadaceae
+BE183	
+BE79	
+BE76	
+BE74	
+BE75	
+BE72	
+ASV129	Firmicutes Bacilli Bacillaceae
+ASV128	Proteobacteria Alphaproteobacteria Dongiaceae
+ASV72	Verrucomicrobia Verrucomicrobiae Chthoniobacteraceae
+ASV1808	Proteobacteria Deltaproteobacteria KD3-10
+ASV646	Planctomycetes Planctomycetacia Gemmataceae
+ASV647	Verrucomicrobia Verrucomicrobiae Chthoniobacteraceae
+ASV644	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV2019	Acidobacteria Blastocatellia_(Subgroup_4) Blastocatellaceae
+BE260	
+BE261	
+BE264	
+BE265	
+BE268	
+BE255	
+BE254	
+BE257	
+ASV1427	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV3409	Bacteroidetes Bacteroidia env.OPS_17
+ASV547	Bacteroidetes Bacteroidia Chitinophagaceae
+ASV469	Planctomycetes Planctomycetacia Pirellulaceae
+ASV541	Proteobacteria Deltaproteobacteria Haliangiaceae
+BE236	
+ASV391	Proteobacteria Deltaproteobacteria bacteriap25
+ASV461	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+ASV548	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV4447	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV5572	Proteobacteria Gammaproteobacteria Xanthomonadaceae
+ASV99	Proteobacteria Gammaproteobacteria Burkholderiaceae
+BE215	
+ASV37	Proteobacteria Alphaproteobacteria Caulobacteraceae
+ASV35	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV492	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+BE213	
+BE212	
+BE219	
+ASV38	Verrucomicrobia Verrucomicrobiae Chthoniobacteraceae
+ASV39	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV6	Proteobacteria Gammaproteobacteria Cellvibrionaceae
+ASV1357	Proteobacteria Gammaproteobacteria Steroidobacteraceae
+ASV350	Proteobacteria Alphaproteobacteria Rhizobiaceae
+BE85	
+ASV8	Proteobacteria Alphaproteobacteria Caulobacteraceae
+ASV1592	Proteobacteria Alphaproteobacteria Rhizobiaceae
+BE84	
+ASV1595	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV263	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV1060	Bacteroidetes Bacteroidia Chitinophagaceae
+BE95	
+BE96	
+BE97	
+BE91	
+ASV2830	Proteobacteria Gammaproteobacteria Burkholderiaceae
+BE93	
+BE80	
+BE98	
+ASV302	Firmicutes Bacilli Paenibacillaceae
+ASV301	Acidobacteria Blastocatellia_(Subgroup_4) Pyrinomonadaceae
+ASV2839	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+BE251	
+ASV347	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+ASV1695	Verrucomicrobia Verrucomicrobiae Verrucomicrobiaceae
+ASV848	Actinobacteria Acidimicrobiia Ilumatobacteraceae
+ASV849	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+ASV2203	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV841	Acidobacteria Blastocatellia_(Subgroup_4) Blastocatellaceae
+ASV842	Proteobacteria Gammaproteobacteria TRA3-20
+ASV844	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+ASV845	Planctomycetes Phycisphaerae Phycisphaeraceae
+BE88	
+BE70	
+ASV2633	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV1282	Proteobacteria Deltaproteobacteria Haliangiaceae
+BE197	
+ASV1114	Firmicutes Bacilli Planococcaceae
+ASV1116	Planctomycetes Planctomycetacia Pirellulaceae
+ASV1443	Actinobacteria Actinobacteria Streptomycetaceae
+ASV1113	Proteobacteria Deltaproteobacteria Sandaracinaceae
+ASV602	Spirochaetes Spirochaetia Spirochaetaceae
+ASV169	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV163	Bacteroidetes Bacteroidia Flavobacteriaceae
+ASV162	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV161	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV167	Acidobacteria Blastocatellia_(Subgroup_4) Pyrinomonadaceae
+ASV166	Fibrobacteres Fibrobacteria Fibrobacteraceae
+ASV2111	Bacteroidetes Bacteroidia Microscillaceae
+ASV712	Actinobacteria Actinobacteria Nocardioidaceae
+ASV2116	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV765	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV761	Planctomycetes Planctomycetacia Rubinisphaeraceae
+ASV4621	Proteobacteria Deltaproteobacteria Myxococcaceae
+ASV1231	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV1237	Proteobacteria Alphaproteobacteria Xanthobacteraceae
+ASV905	Verrucomicrobia Verrucomicrobiae Pedosphaeraceae
+BE27	
+BE26	
+BE29	
+ASV2210	Proteobacteria Deltaproteobacteria BIrii41
+ASV188	Deinococcus-Thermus Deinococci Deinococcaceae
+ASV3772	Firmicutes Bacilli Planococcaceae
+ASV117	Acidobacteria Blastocatellia_(Subgroup_4) Pyrinomonadaceae
+ASV114	Proteobacteria Alphaproteobacteria Beijerinckiaceae
+ASV502	Proteobacteria Alphaproteobacteria Xanthobacteraceae
+ASV112	Proteobacteria Gammaproteobacteria Nitrosomonadaceae
+ASV113	Proteobacteria Gammaproteobacteria Xanthomonadaceae
+ASV110	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV111	Proteobacteria Deltaproteobacteria Sandaracinaceae
+ASV393	Proteobacteria Gammaproteobacteria Pseudomonadaceae
+ASV455	Proteobacteria Gammaproteobacteria SC-I-84
+ASV693	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV697	Bacteroidetes Bacteroidia Sphingobacteriaceae
+BE259	
+BE258	
+ASV78	Actinobacteria Actinobacteria Mycobacteriaceae
+ASV591	Proteobacteria Gammaproteobacteria SC-I-84
+ASV597	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV985	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV73	Proteobacteria Alphaproteobacteria Hyphomicrobiaceae
+ASV71	Proteobacteria Deltaproteobacteria Oligoflexaceae
+ASV76	Proteobacteria Alphaproteobacteria Caulobacteraceae
+ASV77	Proteobacteria Alphaproteobacteria Azospirillaceae
+ASV74	Proteobacteria Gammaproteobacteria Steroidobacteraceae
+BE256	
+ASV2579	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV825	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV341	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV340	Acidobacteria Blastocatellia_(Subgroup_4) Pyrinomonadaceae
+ASV431	Acidobacteria Blastocatellia_(Subgroup_4) Pyrinomonadaceae
+ASV430	Bacteroidetes Bacteroidia Spirosomaceae
+ASV344	Bacteroidetes Bacteroidia Chitinophagaceae
+ASV349	Proteobacteria Alphaproteobacteria Dongiaceae
+ASV348	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+ASV439	Proteobacteria Gammaproteobacteria A21b
+ASV3875	Gemmatimonadetes Gemmatimonadetes Gemmatimonadaceae
+ASV184	Proteobacteria Gammaproteobacteria Unknown_Family
+ASV187	Proteobacteria Gammaproteobacteria Burkholderiaceae
+ASV180	Proteobacteria Alphaproteobacteria Sphingomonadaceae
+ASV1306	Verrucomicrobia Verrucomicrobiae Chthoniobacteraceae
+ASV189	Proteobacteria Gammaproteobacteria SC-I-84
+ASV1652	Acidobacteria Blastocatellia_(Subgroup_4) Pyrinomonadaceae
+ASV2508	Proteobacteria Deltaproteobacteria Haliangiaceae
+ASV3190	Proteobacteria Deltaproteobacteria Haliangiaceae

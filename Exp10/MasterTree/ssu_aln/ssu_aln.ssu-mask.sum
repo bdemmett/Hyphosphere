@@ -1,0 +1,29 @@
+# _ssu-mask :: mask SSU rRNA alignments
+# SSU-ALIGN 0.1.1 (Feb 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# command: _ssu-mask -s /home/be68/Hyphosphere/Exp10/DADA2//ssu_aln/ssu_aln.bacteria.mask --afa --dna ssu_aln/
+# date:    Fri Apr 19 15:44:03 2019
+#
+# Masking alignments using pre-existing masks...
+#
+#                                                     mask    
+#                                                 ------------
+# file name                  in/out  type  #cols  incl.  excl.
+# -------------------------  ------  ----  -----  -----  -----
+  ssu_aln.bacteria.stk        input   aln   1582      -      -
+  ssu_aln.bacteria.mask       input  mask   1582    248   1334
+  ssu_aln.bacteria.mask.pdf  output   pdf   1582    248   1334
+  ssu_aln.bacteria.mask.afa  output   aln    248      -      -
+#
+# All attempts to draw structure diagrams of masks were successful.
+#
+# List of executed commands saved in:     ssu_aln.ssu-mask.log.
+# Output printed to the screen saved in:  ssu_aln.ssu-mask.sum.
+#
+# All output files created in directory ./ssu_aln/
+#
+# CPU time:  00:00:01.39  (hh:mm:ss)
+# 
+# SSU-ALIGN-SUCCESS

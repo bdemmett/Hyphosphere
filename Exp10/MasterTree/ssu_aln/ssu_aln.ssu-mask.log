@@ -1,0 +1,114 @@
+# _ssu-mask :: mask SSU rRNA alignments
+# SSU-ALIGN 0.1.1 (Feb 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# command: _ssu-mask -s /home/be68/Hyphosphere/Exp10/DADA2//ssu_aln/ssu_aln.bacteria.mask --afa --dna ssu_aln/
+# date:    Fri Apr 19 15:44:03 2019
+
+Printing global hask key as read from ssu.pm:
+
+Global hash key: DF_ALIMASK_PFRACT    value: 0.95
+Global hash key: DF_ALIMASK_PTHRESH   value: 0.95
+Global hash key: DF_CMALIGN_OPTS      value:  --no-null3 --sub 
+Global hash key: DF_CMBUILD_GAPTHRESH value: 0.8
+Global hash key: DF_CMSEARCH_ALG_FLAG value:  --viterbi
+Global hash key: DF_CMSEARCH_OPTS     value:  --hmm-cW 1.5 --no-null3 --noalign 
+Global hash key: DF_CMSEARCH_T        value: -1
+Global hash key: DF_CM_FILE           value: /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.cm
+Global hash key: DF_MASK_FILE         value: /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.mask
+Global hash key: DF_MERGE_INIT_WAIT_SECS value: 3
+Global hash key: DF_MINBIT            value: 50
+Global hash key: DF_MINLEN            value: 1
+Global hash key: DF_MXSIZE            value: 4096
+Global hash key: DF_NO_NAME           value: <NONE>
+Global hash key: DF_TEMPLATE_FILE     value: /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.ps
+Global hash key: VERSION              value: 0.1
+Global hash key: VERSION_PSTR         value: 0p1
+Global hash key: cmalign              value: ssu-cmalign
+Global hash key: cmbuild              value: ssu-cmbuild
+Global hash key: cmsearch             value: ssu-cmsearch
+Global hash key: esl-alimanip         value: ssu-esl-alimanip
+Global hash key: esl-alimask          value: ssu-esl-alimask
+Global hash key: esl-alimerge         value: ssu-esl-alimerge
+Global hash key: esl-alistat          value: ssu-esl-alistat
+Global hash key: esl-reformat         value: ssu-esl-reformat
+Global hash key: esl-seqstat          value: ssu-esl-seqstat
+Global hash key: esl-sfetch           value: ssu-esl-sfetch
+Global hash key: esl-ssdraw           value: ssu-esl-ssdraw
+Global hash key: esl-weight           value: ssu-esl-weight
+Global hash key: ps2pdf               value: ps2pdf
+Global hash key: ssu-align            value: ssu-align
+Global hash key: ssu-merge            value: ssu-merge
+
+Executing:      ssu-esl-alimask -h > /dev/null  2> ssu_aln/ssutmp0erraa50659
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp0erraa50659) with perl's unlink function ... done.
+
+Executing:      ssu-esl-alimanip -h > /dev/null  2> ssu_aln/ssutmp1erraa50659
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp1erraa50659) with perl's unlink function ... done.
+
+Executing:      ssu-esl-ssdraw -h > /dev/null  2> ssu_aln/ssutmp2erraa50659
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp2erraa50659) with perl's unlink function ... done.
+
+Executing:      ssu-esl-reformat -h > /dev/null  2> ssu_aln/ssutmp3erraa50659
+Returned:       0
+Output (STDOUT) sent to /dev/null.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp3erraa50659) with perl's unlink function ... done.
+
+Executing:      ssu-esl-alimask --dna --small -o ssu_aln/ssu_aln.bacteria.mask.stk ssu_aln/ssu_aln.bacteria.stk /home/be68/Hyphosphere/Exp10/DADA2//ssu_aln/ssu_aln.bacteria.mask > ssu_aln.bacteria.alimask  2> ssu_aln/ssutmp4erraa50659
+Returned:       0
+Output (STDOUT) saved in file ssu_aln.bacteria.alimask.
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp4erraa50659) with perl's unlink function ... done.
+
+Executing:      ssu-esl-ssdraw --mask-col --mask /home/be68/Hyphosphere/Exp10/DADA2//ssu_aln/ssu_aln.bacteria.mask --small /home/be68/anaconda3/share/ssu-align-0.1.1/bacteria-0p1.stk /home/be68/anaconda3/share/ssu-align-0.1.1/ssu-align-0p1.ps ssu_aln/ssu_aln.bacteria.mask.ps > ssu_aln/ssutmp5outaa50659  2> ssu_aln/ssutmp5erraa50659
+Returned:       0
+Output (STDOUT): 
+# 1 page postscript saved to file ssu_aln/ssu_aln.bacteria.mask.ps.
+
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp5outaa50659) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssutmp5erraa50659) with perl's unlink function ... done.
+
+Executing:      ps2pdf ssu_aln/ssu_aln.bacteria.mask.ps ssu_aln/ssu_aln.bacteria.mask.pdf > ssu_aln/ssutmp6outaa50659  2> ssu_aln/ssutmp6erraa50659
+Returned:       0
+Output (STDOUT): ***NONE***
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp6outaa50659) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssutmp6erraa50659) with perl's unlink function ... done.
+
+Executing:      ssu-esl-reformat -o ssu_aln/ssu_aln.bacteria.mask.afa --small --informat pfam afa ssu_aln/ssu_aln.bacteria.mask.stk > ssu_aln/ssutmp7outaa50659  2> ssu_aln/ssutmp7erraa50659
+Returned:       0
+Output (STDOUT): ***NONE***
+Output (STDERR): ***NONE***
+
+About to remove file (ssu_aln/ssutmp7outaa50659) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssutmp7erraa50659) with perl's unlink function ... done.
+
+About to remove file (ssu_aln/ssu_aln.bacteria.mask.ps) with perl's unlink function ... done.
+
+About to remove file (ssu_aln.bacteria.alimask) with perl's unlink function ... done.
+
+Fri Apr 19 15:44:04 EDT 2019
+Linux william 4.4.0-97-generic #120-Ubuntu SMP Tue Sep 19 17:28:18 UTC 2017 x86_64 GNU/Linux
+# SSU-ALIGN-SUCCESS
