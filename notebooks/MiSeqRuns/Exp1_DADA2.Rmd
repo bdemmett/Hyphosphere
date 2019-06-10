@@ -1,0 +1,454 @@
+---
+title: "DADA2 pipeline for Hyphosphere Exp 1"
+output: html_notebook
+---
+Following dada2 tutorial:
+https://benjjneb.github.io/dada2/tutorial.html
+
+** If using this workflow on your own data: All samples are simultaneously loaded into memory in the tutorial. If you are dealing with datasets that approach or exceed available RAM, it is preferable to process samples one-by-one in a streaming fashion: see the DADA2 Workflow on Big Data for an example.
+If using this workflow on your own data: By default, the dada function processes each sample independently, but pooled processing is available with pool=TRUE and that may give better results for low sampling depths at the cost of increased computation time. See our discussion about pooling samples for sample inference.
+If using this workflow on your own data: DADA2 also supports 454 and Ion Torrent data, but we recommend some minor parameter changes for those sequencing technologies. The adventurous can explore ?setDadaOpt for other adjustable algorithm parameters.**
+ 
+
+
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+knitr::opts_knit$set(root.dir = '~/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/data')
+```
+
+```{r}
+library(dada2)
+library(tidyr)
+library(dplyr)
+
+```
+
+```{r}
+seqDIR = '~/Hyphosphere/data/MiSeq/20180129/raw/'
+path = seqDIR
+
+#location of taxonomy database
+TrainingSet = '~/Box/research/BTI/seq_data/Databases/silva_nr_v132_train_set.fa.gz'
+SpeciesTraining = '~/Box/research/BTI/seq_data/Databases/silva_species_assignment_v132.fa.gz'
+list.files(path)
+
+#Sample data table
+SamTab ='~'
+
+```
+
+# Filter and trim
+First we read in the names of the fastq files, and perform some string manipulation to get lists of the forward and reverse fastq files in matched order:
+```{r}
+# Forward and reverse fastq filenames have format: SAMPLENAME_R1_001.fastq and SAMPLENAME_R2_001.fastq
+fnFs <- sort(list.files(path, pattern="_R1_001.fastq", full.names = TRUE))
+fnRs <- sort(list.files(path, pattern="_R2_001.fastq", full.names = TRUE))
+# Extract sample names, assuming filenames have format: SAMPLENAME_XXX.fastq
+sample.names <- sapply(strsplit(basename(fnFs), "_"), `[`, 1)
+```
+
+
+#vExamine quality profiles of forward and reverse reads
+We start by visualizing the quality profiles of the forward reads:
+```{r}
+plotQualityProfile(fnFs[17:18])
+```
+* Forward reads look very good.  Truncate to 220 will maintain excellent reads.
+
+```{r}
+plotQualityProfile(fnRs[17:18])
+```
+
+# Perform filtering and trimming
+## Assign the filenames for the filtered fastq.gz files.
+
+```{r}
+filt_path <- file.path(path, "filtered") # Place filtered files in filtered/ subdirectory
+filtFs <- file.path(filt_path, paste0(sample.names, "_F_filt.fastq.gz"))
+filtRs <- file.path(filt_path, paste0(sample.names, "_R_filt.fastq.gz"))
+```
+
+We’ll use standard filtering parameters: maxN=0 (DADA2 requires no Ns), truncQ=2, rm.phix=TRUE and maxEE=2. The maxEE parameter sets the maximum number of “expected errors” allowed in a read, which is a better filter than simply averaging quality scores.
+
+## Filter the forward and reverse reads
+We’ll use standard filtering parameters: maxN=0 (DADA2 requires no Ns), truncQ=2, rm.phix=TRUE and maxEE=2. The maxEE parameter sets the maximum number of “expected errors” allowed in a read, which is a better filter than simply averaging quality scores.  The tr
+
+Adding trimLeft = c(19,20) to remove primer sequences
+```{r}
+
+out <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(210,125),
+              maxN=0, maxEE=c(2,2), truncQ=2, rm.phix=TRUE, trimLeft=c(19,20),
+              compress=TRUE, multithread=TRUE) # On Windows set multithread=FALSE
+head(out)
+```
+
+# Learn Error rates
+
+The DADA2 algorithm depends on a parametric error model (err) and every amplicon dataset has a different set of error rates. The  learnErrors method learns the error model from the data, by alternating estimation of the error rates and inference of sample composition until they converge on a jointly consistent solution. As in many optimization problems, the algorithm must begin with an initial guess, for which the maximum possible error rates in this data are used (the error rates if only the most abundant sequence is correct and all the rest are errors).
+
+```{r}
+errF <- learnErrors(filtFs, multithread=TRUE)
+```
+
+```{r}
+errR <- learnErrors(filtRs, multithread=TRUE)
+```
+
+It is always worthwhile, as a sanity check if nothing else, to visualize the estimated error rates:
+
+
+```{r}
+plotErrors(errF, nominalQ=TRUE)
+```
+
+The error rates for each possible transition (eg. A->C, A->G, …) are shown. Points are the observed error rates for each consensus quality score. The black line shows the estimated error rates after convergence. The red line shows the error rates expected under the nominal definition of the Q-value. Here the black line (the estimated rates) fits the observed rates well, and the error rates drop with increased quality as expected. Everything looks reasonable and we proceed with confidence.
+
+# Dereplication
+Dereplication combines all identical sequencing reads into into “unique sequences” with a corresponding “abundance”: the number of reads with that unique sequence. Dereplication substantially reduces computation time by eliminating redundant comparisons.
+
+Dereplication in the DADA2 pipeline has one crucial addition from other pipelines: DADA2 retains a summary of the quality information associated with each unique sequence. The consensus quality profile of a unique sequence is the average of the positional qualities from the dereplicated reads. These quality profiles inform the error model of the subsequent denoising step, significantly increasing DADA2’s accuracy.
+
+Dereplicate the filtered fastq files
+
+** If using this workflow on your own data: The tutorial dataset is small enough to easily load into memory. If your dataset exceeds available RAM, it is preferable to process samples one-by-one in a streaming fashion: see the DADA2 Workflow on Big Data for an example.**
+ 
+
+
+
+```{r}
+derepFs <- derepFastq(filtFs, verbose=TRUE)
+derepRs <- derepFastq(filtRs, verbose=TRUE)
+# Name the derep-class objects by the sample names
+names(derepFs) <- sample.names
+names(derepRs) <- sample.names
+```
+
+# Sample Inference
+We are now ready to apply the core sequence-variant inference algorithm to the dereplicated data.
+
+Infer the sequence variants in each sample
+
+Forward reads
+```{r}
+dadaFs <- dada(derepFs, err=errF, multithread=TRUE)
+```
+
+Reverse reads
+```{r}
+dadaRs <- dada(derepRs, err=errR, multithread=TRUE)
+```
+
+
+```{r}
+dadaFs[[1]]
+```
+
+# Merge paired reads
+Spurious sequence variants are further reduced by merging overlapping reads. The core function here is mergePairs, which depends on the forward and reverse reads being in matching order at the time they were dereplicated.
+
+Merge the denoised forward and reverse reads:
+```{r}
+mergers <- mergePairs(dadaFs, derepFs, dadaRs, derepRs, verbose=TRUE)
+# Inspect the merger data.frame from the first sample
+head(mergers[[1]])
+```
+We now have a data.frame for each sample with the merged $sequence, its $abundance, and the indices of the merged $forward and  $reverse denoised sequences. Paired reads that did not exactly overlap were removed by mergePairs.
+
+If using this workflow on your own data: Most of your reads should successfully merge. If that is not the case upstream parameters may need to be revisited: Did you trim away the overlap between your reads?
+
+# Construct sequence table
+We can now construct a sequence table of our mouse samples, a higher-resolution version of the OTU table produced by traditional methods.
+
+```{r}
+seqtab <- makeSequenceTable(mergers)
+dim(seqtab)
+# Inspect distribution of sequence lengths
+table(nchar(getSequences(seqtab)))
+```
+
+
+The sequence table is a matrix with rows corresponding to (and named by) the samples, and columns corresponding to (and named by) the sequence variants. The lengths of our merged sequences all fall within the expected range for this V4 amplicon.
+
+* If using this workflow on your own data: Sequences that are much longer or shorter than expected may be the result of non-specific priming, and may be worth removing (eg. seqtab2 <- seqtab[,nchar(colnames(seqtab)) %in% seq(250,256)]). This is analogous to “cutting a band” in-silico to get amplicons of the targeted length.
+
+```{r}
+seqtab2 <- seqtab[,nchar(colnames(seqtab)) %in% seq(250,256)]
+
+table(nchar(getSequences(seqtab2)))
+```
+
+ 
+# Remove chimeras
+The core dada method removes substitution and indel errors, but chimeras remain. Fortunately, the accuracy of the sequences after denoising makes identifying chimeras simpler than it is when dealing with fuzzy OTUs: all sequences which can be exactly reconstructed as a bimera (two-parent chimera) from more abundant sequences.
+
+Remove chimeric sequences:
+
+```{r}
+seqtab.nochim <- removeBimeraDenovo(seqtab2, method="consensus", multithread=TRUE, verbose=TRUE)
+dim(seqtab.nochim)
+```
+
+
+```{r}
+sum(seqtab.nochim)/sum(seqtab)
+```
+
+The fraction of chimeras varies based on factors including experimental procedures and sample complexity, but can be substantial. Here chimeras make up about 20% of the inferred sequence variants, but those variants account for only about 4% of the total sequence reads.
+
+* If using this workflow on your own data: Most of your reads should remain after chimera removal (it is not uncommon for a majority of sequence variants to be removed though). If most of your reads were removed as chimeric, upstream processing may need to be revisited. In almost all cases this is caused by primer sequences with ambiguous nucleotides that were not removed prior to beginning the DADA2 pipeline.
+ 
+
+# Track reads through the pipeline
+As a final check of our progress, we’ll look at the number of reads that made it through each step in the pipeline:
+
+```{r}
+getN <- function(x) sum(getUniques(x))
+track <- cbind(out, sapply(dadaFs, getN), sapply(mergers, getN), rowSums(seqtab), rowSums(seqtab.nochim))
+# If processing a single sample, remove the sapply calls: e.g. replace sapply(dadaFs, getN) with getN(dadaFs)
+colnames(track) <- c("input", "filtered", "denoised", "merged", "tabled", "nonchim")
+rownames(track) <- sample.names
+head(track)
+```
+
+Looks good, we kept the majority of our raw reads, and there is no over-large drop associated with any single step.
+
+*If using this workflow on your own data: This is a great place to do a last sanity check. Outside of filtering (depending on how stringent you want to be) there should no step in which a majority of reads are lost. If a majority of reads failed to merge, you may need to revisit the  truncLen parameter used in the filtering step and make sure that the truncated reads span your amplicon. If a majority of reads failed to pass the chimera check, you may need to revisit the removal of primers, as the ambiguous nucleotides in unremoved primers interfere with chimera identification.
+ 
+#Assign taxonomy
+It is common at this point, especially in 16S/18S/ITS amplicon sequencing, to classify sequence variants taxonomically. The DADA2 package provides a native implementation of the RDP’s naive Bayesian classifier for this purpose. The assignTaxonomy function takes a set of sequences and a training set of taxonomically classified sequences, and outputs the taxonomic assignments with at least minBoot bootstrap confidence.
+
+We maintain formatted training fastas for the RDP training set, GreenGenes clustered at 97% identity, and the Silva reference database. For fungal taxonomy, the General Fasta release files from the UNITE ITS database can be used as is. To follow along, download the  silva_nr_v128_train_set.fa.gz file, and place it in the directory with the fastq files.
+```{r}
+taxa <- assignTaxonomy(seqtab.nochim, TrainingSet, multithread=TRUE)
+```
+
+```{r}
+taxa <- addSpecies(taxa, SpeciesTraining)
+```
+
+* inspect taxonomic assignment
+```{r}
+taxa.print <- taxa # Removing sequence rownames for display only
+rownames(taxa.print) <- NULL
+head(taxa.print)
+```
+
+
+* If using this workflow on your own data: If your reads do not seem to be appropriately assigned, for example lots of your bacterial 16S sequences are being assigned as Eukaryota NA NA NA NA NA, your reads may be in the opposite orientation as the reference database. Tell dada2 to try the reverse-complement orientation with assignTaxonomy(..., tryRC=TRUE) and see if this fixes the assignments.
+ 
+# Evaluate accuracy
+One of the samples included here was a “mock community”, in which a mixture of 20 known strains was sequenced (this mock community is supposed to be 21 strains, but P. acnes is absent). Reference sequences corresponding to these strains were provided in the downloaded zip archive. We return to that sample and compare the sequence variants inferred by DADA2 to the expected composition of the community.
+
+#Evaluating DADA2’s accuracy on the mock community:
+```{r}
+
+unqs.mock <- seqtab.nochim['10xBLS156',]
+unqs.mock <- sort(unqs.mock[unqs.mock>0], decreasing=TRUE) # Drop ASVs absent in the Mock
+cat("DADA2 inferred", length(unqs.mock), "sample sequences present in the Mock community.\n")
+```
+
+
+```{r}
+# mock.ref <- getSequences(file.path(path, "HMP_MOCK.v35.fasta"))
+# match.ref <- sum(sapply(names(unqs.mock), function(x) any(grepl(x, mock.ref))))
+# cat("Of those,", sum(match.ref), "were exact matches to the expected reference sequences.\n")
+```
+
+```{r}
+sample.names
+unqs.HS <- seqtab.nochim['HCHS1',]
+unqs.HS <- sort(unqs.mock[unqs.HS>0], decreasing=TRUE) # Drop ASVs absent in the Mock
+cat("DADA2 inferred", length(unqs.HS), "sample sequences present in the Hyphal Sand sample. \n")
+
+str(unqs.HS)
+```
+
+# Create phylogenetic tree  
+```{r}
+# source("https://bioconductor.org/biocLite.R")
+#biocLite("DECIPHER")
+library(DECIPHER)
+seqs <- getSequences(seqtab.nochim)
+names(seqs) <- seqs # This propagates to the tip labels of the tree
+alignment <- AlignSeqs(DNAStringSet(seqs), anchor=NA,verbose=TRUE, processors = 2)
+saveRDS(alignment, file = '~/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/data/DADA2files/alignment.rds')
+alignment
+```
+
+The phangorn R package is then used to construct a phylogenetic tree. Here we first construct a neighbor-joining tree, and then fit a GTR+G+I (Generalized time-reversible with Gamma rate variation) maximum likelihood tree using the neighbor-joining tree as a starting point.
+
+```{r}
+library(phangorn)
+phangAlign <- phyDat(as(alignment, "matrix"), type="DNA")
+dm <- dist.ml(phangAlign)
+treeNJ <- NJ(dm) # Note, tip order != sequence order
+fit = pml(treeNJ, data=phangAlign)
+fitGTR <- update(fit, k=4, inv=0.2)
+
+fitGTR <- optim.pml(fitGTR, model="GTR", optInv=TRUE, optGamma=TRUE,
+        rearrangement = "stochastic", control = pml.control(trace = 0))
+
+saveRDS(fitGTR, file = '~/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/data/DADA2files/fitGTR.rds')
+detach("package:phangorn", unload=TRUE)
+```
+
+
+#Bonus: Handoff to phyloseq
+The phyloseq R package is a powerful framework for further analysis of microbiome data. We now demosntrate how to straightforwardly import the tables produced by the DADA2 pipeline into phyloseq. We’ll also add the small amount of metadata we have – the samples are named by the gender (G), mouse subject number (X) and the day post-weaning (Y) it was sampled (eg. GXDY).
+
+Import into phyloseq:
+```{r}
+library(phyloseq); packageVersion("phyloseq")
+library(ggplot2); packageVersion("ggplot2")
+```
+
+
+We can construct a simple sample data.frame based on the filenames. Usually this step would instead involve reading the sample data in from a file.
+
+
+
+```{r}
+# samples.out <- rownames(seqtab.nochim)
+# subject <- sapply(strsplit(samples.out, "D"), `[`, 1)
+# gender <- substr(subject,1,1)
+# subject <- substr(subject,2,999)
+# day <- as.integer(sapply(strsplit(samples.out, "D"), `[`, 2))
+# samdf <- data.frame(Subject=subject, Gender=gender, Day=day)
+# samdf$When <- "Early"
+# samdf$When[samdf$Day>100] <- "Late"
+# rownames(samdf) <- samples.out
+# read sample table
+samdf = read.delim(file= SamTab, header = TRUE, sep = '\t', row.names = "SampleID")
+samdf
+```
+We can now construct a phyloseq object directly from the dada2 outputs.
+
+```{r}
+#rename samples that start with a number
+tmp = seqtab.nochim
+row.names(tmp)[1:3] = paste("X",row.names(tmp)[1:3], sep = '')
+row.names(tmp)
+
+
+tmp2 = cbind(taxa, row.names(taxa))
+colnames(tmp2)[8] = "Seq"
+
+
+
+ps <- phyloseq(otu_table(tmp, taxa_are_rows=FALSE), 
+               sample_data(samdf), 
+               tax_table(tmp2))
+#ps <- prune_samples(sample_names(ps) != "Mock", ps) # Remove mock sample
+ps
+
+rm(tmp, tmp2)
+
+
+new.names <- paste0("ASV", seq(ntaxa(ps))) # Define new names ASV1, ASV2,
+seqs <- taxa_names(ps) # Store sequences
+names(seqs) <- new.names # Make map from ASV1 to full sequence
+taxa_names(ps) <- new.names # Rename to human-friendly format
+
+saveRDS(seqs, file = '~/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/data/DADA2seqs.rds')
+seqs = readRDS(file = '~/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/data/DADA2seqs.rds')
+head(seqs)
+outfile = '~/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/data/DADA2seqs.fasta'
+#as.list(seqs)[1:4]
+SeqNames = names(seqs) %>%
+    as.list()
+SeqNames[1:4]
+seqinr::write.fasta(sequences = as.list(seqs),names = SeqNames, file.out = outfile)
+tax_table(ps)[1:4,]
+typeof(seqs)
+seqs[1:4]
+```
+
+```{r}
+controls = prune_samples(c("BaseA", "BaseB", "BaseC", "X10xBLS156", "X2xBLS143", "X5xBLS120", "NegativeH2O", "Hneg1"), ps)
+controls
+
+
+```
+
+## Sparsity filter and removing non-target organisms
+```{r}
+ps <- subset_taxa(ps, Kingdom == "Bacteria")
+ps
+
+```
+
+```{r}
+# filtering/normalizing
+Hyphosphere = subset_samples(ps, !is.na(Soil) & SampleType %in% c("Hyphae", "Core soil", "Rhizoplane"))
+Hyphosphere
+
+saveRDS(Hyphosphere, file = '~/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/data/Hyposphere_dada2.rds')
+```
+
+```{r}
+Hyphosphere = readRDS(file = '~/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/data/Hyposphere_dada2.rds')
+
+HTree = read_tree(treefile = '~/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/data/ASV.tree')
+New_Hyphosphere = merge_phyloseq(Hyphosphere, HTree)
+New_Hyphosphere
+
+ps.thresh = filter_taxa(New_Hyphosphere, function(x) sum(x > 3) > 2, TRUE)
+
+#Save Seqs from Threshold phyloseq object
+
+
+seqs = ps.thresh %>% 
+  tax_table(.) %>%
+  as.data.frame() %>%
+  .$Seq %>%
+  as.character() %>%
+  as.list()
+
+SeqNames = ps.thresh %>% 
+  tax_table(.) %>%
+  as.data.frame() %>%
+  row.names() %>%
+  as.character() %>%
+  as.list()
+
+outfile = '~/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/data/DADA2seqs_thresh.fasta'
+seqinr::write.fasta(sequences = seqs,names = SeqNames, file.out = outfile)
+
+#as.list(seqs)[1:4]
+TaxT
+SeqNames = names(seqs) %>%
+    as.list()
+SeqNames[1:4]
+seqinr::write.fasta(sequences = as.list(seqs),names = SeqNames, file.out = outfile)
+
+ps.snorm = transform_sample_counts(ps.thresh, function(x) x/sum(x))
+ps.snorm
+```
+
+
+```{r}
+
+ps.thresh
+saveRDS(ps.thresh, file = '~/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/data/Hyposphere_thresh_dada2.rds')
+
+saveRDS(ps.snorm, file = '~/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/data/Hyposphere_snorm_dada2.rds')
+
+
+
+#saveRDS(controls, file = '~/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/data/Controls_dada2.rds')
+```
+
+```{r}
+
+```
+
+
+```{r}
+sessionInfo()
+citation(package = 'base')
+```
+
+

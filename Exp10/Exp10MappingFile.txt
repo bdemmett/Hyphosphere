@@ -92,9 +92,9 @@ SampleID	Sample	Note	Primer_link	fwd_barcode	rev_barcode
 91_1.2BS	1.2BS	Kozich Primer Plate 1 (Primer 1-96) must be used!	91	TAGCGAGT	TCGCTATA
 92_3.2BS	3.2BS	Kozich Primer Plate 1 (Primer 1-96) must be used!	92	CTGCGTGT	TCGCTATA
 93_3.1BS	3.1BS	Kozich Primer Plate 1 (Primer 1-96) must be used!	93	TCATCGAG	TCGCTATA
-94_Extraction Blank	Extraction Blank	Kozich Primer Plate 1 (Primer 1-96) must be used!	94	CGTGAGTG	TCGCTATA
+94_ExtractionBlank	ExtractionBlank	Kozich Primer Plate 1 (Primer 1-96) must be used!	94	CGTGAGTG	TCGCTATA
 95_Mock	Mock	Kozich Primer Plate 1 (Primer 1-96) must be used!	95	GGATATCT	TCGCTATA
-96_PCR Blank	PCR Blank	Kozich Primer Plate 1 (Primer 1-96) must be used!	96	GACACCGT	TCGCTATA
+96_ExtractionBlank	ExtractionBlank	Kozich Primer Plate 1 (Primer 1-96) must be used!	96	GACACCGT	TCGCTATA
 97_4.5BP	4.5BP	Kozich Primer Plate 2 (Primer 97-192) must be used!	97	CTACTATA	AACTCTCG
 98_4.5CS	4.5CS	Kozich Primer Plate 2 (Primer 97-192) must be used!	98	CGTTACTA	AACTCTCG
 99_4.5BS	4.5BS	Kozich Primer Plate 2 (Primer 97-192) must be used!	99	AGAGTCAC	AACTCTCG
@@ -149,7 +149,7 @@ SampleID	Sample	Note	Primer_link	fwd_barcode	rev_barcode
 148_T0R2	T0R2	Kozich Primer Plate 2 (Primer 97-192) must be used!	148	TACGAGAC	GGAGACTA
 149_T0R3	T0R3	Kozich Primer Plate 2 (Primer 97-192) must be used!	149	ACGTCTCG	GGAGACTA
 150_T0R4	T0R4	Kozich Primer Plate 2 (Primer 97-192) must be used!	150	TCGACGAG	GGAGACTA
-151_Blank	Blank	Kozich Primer Plate 2 (Primer 97-192) must be used!	151	GATCGTGT	GGAGACTA
+151_ExtractionBlank	ExtractionBlank	Kozich Primer Plate 2 (Primer 97-192) must be used!	151	GATCGTGT	GGAGACTA
 152_GvSpores	GvSpores	Kozich Primer Plate 2 (Primer 97-192) must be used!	152	GTCAGATA	GGAGACTA
 153_T0R5	T0R5	Kozich Primer Plate 2 (Primer 97-192) must be used!	153	CTACTATA	GTCGCTCG
 154_T0R6	T0R6	Kozich Primer Plate 2 (Primer 97-192) must be used!	154	CGTTACTA	GTCGCTCG
@@ -158,7 +158,7 @@ SampleID	Sample	Note	Primer_link	fwd_barcode	rev_barcode
 157_3.3RH	3.3RH	Kozich Primer Plate 2 (Primer 97-192) must be used!	157	ACGTCTCG	GTCGCTCG
 158_1.4RH	1.4RH	Kozich Primer Plate 2 (Primer 97-192) must be used!	158	TCGACGAG	GTCGCTCG
 159_2.4RH	2.4RH	Kozich Primer Plate 2 (Primer 97-192) must be used!	159	GATCGTGT	GTCGCTCG
-160_Blank?	Blank?	Kozich Primer Plate 2 (Primer 97-192) must be used!	160	GTCAGATA	GTCGCTCG
+160_Unknown	Unknown	Kozich Primer Plate 2 (Primer 97-192) must be used!	160	GTCAGATA	GTCGCTCG
 161_4.1CH	4.1CH	Kozich Primer Plate 2 (Primer 97-192) must be used!	161	CTACTATA	GTCGTAGT
 162_4.1RH	4.1RH	Kozich Primer Plate 2 (Primer 97-192) must be used!	162	CGTTACTA	GTCGTAGT
 163_4.4CH	4.4CH	Kozich Primer Plate 2 (Primer 97-192) must be used!	163	AGAGTCAC	GTCGTAGT
@@ -189,5 +189,5 @@ SampleID	Sample	Note	Primer_link	fwd_barcode	rev_barcode
 188_5.3RH	5.3RH	Kozich Primer Plate 2 (Primer 97-192) must be used!	188	TACGAGAC	TCGCTATA
 189_6.3CH	6.3CH	Kozich Primer Plate 2 (Primer 97-192) must be used!	189	ACGTCTCG	TCGCTATA
 190_6.3RH	6.3RH	Kozich Primer Plate 2 (Primer 97-192) must be used!	190	TCGACGAG	TCGCTATA
-191_Blank	Blank	Kozich Primer Plate 2 (Primer 97-192) must be used!	191	GATCGTGT	TCGCTATA
-192_Blank	Blank	Kozich Primer Plate 2 (Primer 97-192) must be used!	192	GTCAGATA	TCGCTATA
+191_Mock-2	Mock-2	Kozich Primer Plate 2 (Primer 97-192) must be used!	191	GATCGTGT	TCGCTATA
+192_ExtractionBlank	ExtractionBlank	Kozich Primer Plate 2 (Primer 97-192) must be used!	192	GTCAGATA	TCGCTATA

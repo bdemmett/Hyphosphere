@@ -1,0 +1,44 @@
+SampleID	SampleType	Soil	Concentration_ng.ul
+HCBN1	Core soil	N7	6.08
+HCBN2	Core soil	N7	7.58
+HCBN3	Core soil	N7	7.05
+HCBF1	Core soil	Florence	2.32
+HCBF2	Core soil	Florence	2.08
+HCBF3	Core soil	Florence	1.89
+HCBP1	Core soil	Pendelton	9.18
+HCBP2	Core soil	Pendelton	6.87
+HCBP3	Core soil	Pendelton	3.85
+HCBS1	Core soil	Sand	0.05
+HCBS2	Core soil	Sand	0.303
+HCBS3	Core soil	Sand	0.05
+HCRN1	Rhizoplane	N7	14.9
+HCRN2	Rhizoplane	N7	4.1
+HCRN3	Rhizoplane	N7	3.92
+HCRF1	Rhizoplane	Florence	4.29
+HCRF2	Rhizoplane	Florence	3.87
+HCRF3	Rhizoplane	Florence	9.21
+HCRP1	Rhizoplane	Pendelton	14.7
+HCRP2	Rhizoplane	Pendelton	5.9
+HCRP3	Rhizoplane	Pendelton	8.96
+HCRS1	Rhizoplane	Sand	3.81
+HCRS2	Rhizoplane	Sand	2.68
+HCRS3	Rhizoplane	Sand	3.6
+HCHN1	Hyphae	N7	0.57
+HCHN2	Hyphae	N7	0.1
+HCHN3	Hyphae	N7	0.12
+HCHF1	Hyphae	Florence	0.28
+HCHF2	Hyphae	Florence	0.11
+HCHF3	Hyphae	Florence	0.07
+HCHP1	Hyphae	Pendelton	0.11
+HCHP2	Hyphae	Pendelton	0.3
+HCHP3	Hyphae	Pendelton	0.15
+HCHS1	Hyphae	Sand	0.01
+HCHS2	Hyphae	Sand	0.01
+HCHS3	Hyphae	Sand	0.05
+Hneg1	Negative control		0
+X10xBLS156	MockComm		
+X2xBLS143	MockComm		
+X5xBLS120	MockComm		
+BaseA	MockComm		
+BaseB	MockComm		
+BaseC	MockComm		

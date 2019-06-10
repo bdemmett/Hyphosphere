@@ -1,0 +1,140 @@
+---
+title: "Sequencing controls"
+output: html_notebook
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, include = FALSE}
+#windowsFonts(Arial=windowsFont("Arial"))
+library(ggplot2)
+library(foreach)
+library(doParallel)
+library(gridExtra)
+library(dplyr)
+library(tidyr)
+library(vegan)
+library(RColorBrewer)
+library(phyloseq)
+library(DESeq2)
+library(reshape2)
+```
+
+
+```{r, include = FALSE}
+theme_pub = function (base_size = 11, base_family = "Arial") 
+{
+    theme_grey(base_size = base_size, base_family = base_family) %+replace% 
+        theme(
+            axis.line.x = element_line(size = .5),
+            axis.line.y = element_line(size = .5),
+            panel.background = element_rect(fill = "white", colour = NA), 
+            panel.border = element_rect(fill = NA, color = "black", size = .5), 
+            panel.grid.major = element_blank(), 
+            panel.grid.minor = element_blank(), 
+            strip.background = element_rect(fill = "grey85", 
+                colour = "grey20"), 
+            legend.key = element_rect(fill = "white", 
+                colour = NA), complete = TRUE)
+    }
+```
+
+```{r}
+# read phyloseq object 
+
+F = 'C:/Users/Bryan/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/data/Hyposphere_dada2.rds' #Exp1_TrialHyphosphere/data/Hyphosphere_dada2.rds'
+F
+physeq.Full = readRDS(F)
+#sd = sample_data(physeq.Full)
+physeq.Full
+
+sample_names(physeq.Full)
+
+phy.controls = filter_taxa(physeq.Full, function(x) max(x) > 0, TRUE)
+
+# re-normalize after subsetting taxa
+phy.controls = transform_sample_counts(phy.controls, function(x) x/sum(x))
+phy.controls
+
+Expected = read.delim(file = "C:/Users/Bryan/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/data/MockCommExpected.txt", sep = "\t", header = TRUE)
+colnames(Expected) = gsub("o_", "", colnames(Expected))
+Expected
+```
+
+```{r}
+Exp1Neg = phy.controls %>%
+  subset_samples(SampleID == "Hneg1") %>%
+  filter_taxa(., function(x) max(x) > 0, TRUE) %>%
+  psmelt()
+
+Exp1Neg %>% arrange(OTU)
+```
+
+```{r}
+phy.controls %>% subset_taxa(Order == "Enterobacteriales") %>%
+plot_bar(., "Sample", "Abundance", "Order", title = "Composition in controls by order")
+#mdf = psmelt(phy.controls)
+#head(mdf)
+```
+
+```{r}
+sample_data(phy.controls)$SampleID = row.names(sample_data(phy.controls))
+sample_data(phy.controls)
+phy.controls %>% subset_samples(SampleID != "Hneg1") %>%
+  filter_taxa(., function(x) sum(x) > 0, TRUE) %>%
+plot_bar(., "Sample", "Abundance", "Order", title = "Composition in controls by Order")
+#ggsave(filename = "/Users/Bryan/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/figures/ControlCompositions.png", width = 6.5, height = 5)
+```
+
+```{r}
+mdf = psmelt(phy.controls)
+
+OrderEst = mdf %>%
+  group_by(Sample, Order) %>%
+  summarize(nEst = length(OTU),
+            sumEst = sum(Abundance))
+  
+
+mock.j = Expected %>% 
+  melt(.,value.name = "Expected Abundance") %>%
+  full_join(OrderEst,., by = c("Sample"="SampleID", "Order"="variable")) %>%
+  gather('variable', 'value', "Expected Abundance", "sumEst")
+
+head(mock.j)
+tail(mock.j)
+```
+
+```{r, fig.height = 5, fig.width = 6.5}
+mock.j %>% filter(Sample %in% c("BaseA")) %>%
+  # .$Order %>%
+  # unique()
+  #mutate(Order = droplevels(factor(Order))) %>%
+ggplot(., aes(x = Order, value, fill=variable)) +
+    geom_bar(stat='identity', position='dodge') +
+    labs(y='Relative abundance in\nthe mock community') +
+    theme_pub(base_size = 16)+
+    theme(axis.text.x = element_text(angle=90, vjust=0.5, hjust=1), legend.position = "bottom") +
+    facet_wrap(~Sample, ncol = 2)
+
+#ggsave(filename = "/Users/Bryan/Box/research/BTI/Experiments/Exp1_TrialHyphosphere/figures/MockCommA.png", width = 6.5, height = 6)
+```
+
+```{r, fig.height = 6, fig.width = 6.5}
+mock.j %>% filter(!Sample %in% c("BaseA", "BaseB", "BaseC", "Hneg1")) %>%
+  # .$Order %>%
+  # unique()
+  #mutate(Order = droplevels(factor(Order))) %>%
+ggplot(., aes(x = Order, value, fill=variable)) +
+    geom_bar(stat='identity', position='dodge') +
+    labs(y='Relative abundance in\nthe mock community') +
+    theme_pub()+
+    theme(axis.text.x = element_text(angle=90, vjust=0.5, hjust=1)) +
+    facet_wrap(~Sample, ncol = 2)
+```
+
+
+
+
+
