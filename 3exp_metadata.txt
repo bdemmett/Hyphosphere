@@ -144,7 +144,7 @@ UMGC_H2O_004_F03_S306	UMGC_H2O_004_F03_S306	1				PB
 92_3.2BS	3.2BS	2	3.2	Gv	Lansing	BS	HN	2	24	3	3.592
 93_3.1BS	3.1BS	2	3.1	Gv	Lansing	BS	HN	1	14	3	3.709
 94_ExtractionBlank	ExtractionBlank	2				EB					0.119
-95_Mock	Mock	2				MK					0.12
+95_Mock	MockComm	2				MK					0.12
 96_ExtractionBlank	ExtractionBlank	2				EB					0.123
 97_4.5BP	4.5BP	2	4.5	Gv	Lansing	BP	HN	5	65	4	0.975
 98_4.5CS	4.5CS	2	4.5	Gv	Lansing	CS	HN	5	65	4	0.406
@@ -200,7 +200,7 @@ UMGC_H2O_004_F03_S306	UMGC_H2O_004_F03_S306	1				PB
 148_T0R2	T0R2	2			Lansing	T0				2	3.545
 149_T0R3	T0R3	2			Lansing	T0				3	2.036
 150_T0R4	T0R4	2			Lansing	T0				4	7.586
-151_Blank	ExtractionBlank	2				EB					0.103
+151_ExtractionBlank	ExtractionBlank	2				EB					0.103
 152_GvSpores	GvSpores	2		Gv		GV					0.101
 153_T0R5	T0R5	2			Lansing	T0	HN			5	4.461
 154_T0R6	T0R6	2			Lansing	T0	HN			6	4.733
@@ -240,8 +240,8 @@ UMGC_H2O_004_F03_S306	UMGC_H2O_004_F03_S306	1				PB
 188_5.3RH	5.3RH	2	5.3	Gv	Lansing	RH	HN	3	35	5	0.132
 189_6.3CH	6.3CH	2	6.3	Gv	Lansing	CH	HN	3	35	6	0.09
 190_6.3RH	6.3RH	2	6.3	Gv	Lansing	RH	HN	3	35	6	0.126
-191_Mock-2	Mock-2	2				MK					0.073
-192_Blank	ExtractionBlank	2				EB					0.073
+191_Mock-2	MockComm-2	2				MK					0.073
+192_ExtractionBlank	ExtractionBlank	2				EB					0.073
 1_GVCLHN1-BH	GVCLHN1-BH	3	GVCLHN1	Gv	Pendelton	BH	HN		27	1	
 2_GVCLHN1-BS	GVCLHN1-BS	3	GVCLHN1	Gv	Pendelton	BS	HN		27	1	
 3_GVCLHN2-BH	GVCLHN2-BH	3	GVCLHN2	Gv	Pendelton	BH	HN		27	2	
