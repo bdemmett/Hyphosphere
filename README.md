@@ -10,9 +10,9 @@ Scripts and data analysis for hyphosphere experiments
 * 2-MergeRuns_CreatePhyloseq.ipynb
 
 ## Align and build tree from bacterial sequences
-*3-MergedRuns_Fasttree.ipynb
+* 3-MergedRuns_Fasttree.ipynb
 
 ## Incorporate tree into final phyloseq objects
-*4-FinalizePhyloseqObject.ipynb
+* 4-FinalizePhyloseqObject.ipynb
 ** note that in order to identify contaminants this notebook is run, then a subsequent notebook to id contaminants is run and the identified sequences reincorporated into this notebook and re-run
 
