@@ -1,11 +1,13 @@
 # Hyphosphere
 Scripts and data analysis for hyphal communities manuscript can be found in ms_notebooks
 
+If starting analysis from phyloseq objects included in supplemental information skip to notebook 5.  
+* taxa_seqs.txt can be used to link sequences to ASVs in phyloseq object
 
 ## Three MiSeq runs are individually processed in DADA2
-* Exp1_DADA2.ipynb (Exp1 in ms)
-* Exp10_DADA2.ipynb (Exp3 in ms)
-* Exp11_DADA2.ipynb (Exp2 in ms)
+* 1a-Exp1_DADA2.ipynb
+* 1b-Exp2_DADA2.ipynb 
+* 1c-Exp3_DADA2.ipynb 
 
 ## Count tables are merged, taxonomy assigned and brought into phyloseq
 * 2-MergeRuns_CreatePhyloseq.ipynb
